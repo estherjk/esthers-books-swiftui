@@ -1,0 +1,209 @@
+[
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/155/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "564d07a87721d8698ff010d9"
+        ],
+        "created_at": "2020-07-21T06:01:34.169219Z",
+        "updated_at": "2020-07-25T05:19:11.717560Z",
+        "title": "Justice Awakening",
+        "trello_id": "5a91b922b18293f023cffa41",
+        "date_started": "2020-07-17T03:40:47.634000Z",
+        "date_finished": "2020-07-21T04:07:26.326000Z",
+        "cover_attachment": {
+            "id": "5f111e3b39c13d693d20f17e",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5a91b922b18293f023cffa41/0d228cec5037840081002cb4bf74fc74/image.jpeg",
+            "date": "2020-07-17T03:42:51.683Z",
+            "name": "justice-awakening",
+            "bytes": 58184,
+            "fileName": "image.jpeg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": "image/jpeg",
+            "edgeColor": "#d9be8a"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/154/",
+        "genres": [
+            "564d07a87721d8698ff010dd"
+        ],
+        "created_at": "2020-07-16T06:00:56.831557Z",
+        "updated_at": "2020-07-25T05:19:11.108518Z",
+        "title": "How to Be an Antiracist",
+        "trello_id": "5efe80aaeb92f857da95164f",
+        "date_started": "2020-07-03T03:59:34.161000Z",
+        "date_finished": "2020-07-15T23:49:59.414000Z",
+        "cover_attachment": {
+            "id": "5efe82155d91292d7baf9196",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5efe80aaeb92f857da95164f/a190720b2d027fac66e6c061162cbeda/cover.jpg",
+            "date": "2020-07-03T00:55:49.761Z",
+            "name": "antiracist",
+            "bytes": 108801,
+            "fileName": "cover.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": "image/jpeg",
+            "edgeColor": "#d4d4d4"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/153/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "568fe9b1fb396fe706380fbd"
+        ],
+        "created_at": "2020-07-02T06:00:56.488846Z",
+        "updated_at": "2020-07-25T05:19:13.489184Z",
+        "title": "Radical Candor",
+        "trello_id": "5d1e1d4b8390c75fe50cc2f3",
+        "date_started": "2020-06-20T13:59:48.620000Z",
+        "date_finished": "2020-07-02T03:25:28.976000Z",
+        "cover_attachment": {
+            "id": "5eee16256749c155668e4f85",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5d1e1d4b8390c75fe50cc2f3/25ee6ec6b783131f18027b844b8279be/image.jpeg",
+            "date": "2020-06-20T13:59:01.034Z",
+            "name": "radical-candor",
+            "bytes": 46281,
+            "fileName": "image.jpeg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": "image/jpeg",
+            "edgeColor": "#fcb323"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/152/",
+        "genres": [
+            "564d07a87721d8698ff010d8"
+        ],
+        "created_at": "2020-06-19T16:30:55.183886Z",
+        "updated_at": "2020-07-25T05:19:16.139760Z",
+        "title": "Vanity Fair",
+        "trello_id": "564d07a97721d8698ff01121",
+        "date_started": "2020-05-02T19:23:24.910000Z",
+        "date_finished": "2020-06-19T16:28:39.781000Z",
+        "cover_attachment": {
+            "id": "5eadc86f8385fb04da8000e0",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/564d07a97721d8698ff01121/565c3b5aca6b715c3c68348eeea0bfd7/vanity-fair.jpg",
+            "date": "2020-05-02T19:22:23.995Z",
+            "name": "vanity-fair",
+            "bytes": 22138,
+            "fileName": "vanity-fair.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": "image/jpeg",
+            "edgeColor": "#848848"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/151/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "564d07a87721d8698ff010d9"
+        ],
+        "created_at": "2020-06-06T06:01:30.636132Z",
+        "updated_at": "2020-07-25T05:19:13.368248Z",
+        "title": "The Prodigal Prophet: Jonah and the Mystery of God's Mercy",
+        "trello_id": "5c449143f921fc8623287a0c",
+        "date_started": "2020-05-25T16:36:47.941000Z",
+        "date_finished": "2020-06-06T00:01:31.468000Z",
+        "cover_attachment": {
+            "id": "5ecbf3a448efa00f458ead43",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5c449143f921fc8623287a0c/0d79f187b7976ae350ea4b3f25d3f49b/cover.jpg",
+            "date": "2020-05-25T16:34:44.072Z",
+            "name": "prodigal-prophet",
+            "bytes": 63878,
+            "fileName": "cover.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": "image/jpeg",
+            "edgeColor": "#209e9b"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/143/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "568fe9b1fb396fe706380fbd",
+            "5e25cd38bce01a3e67ae57ee"
+        ],
+        "created_at": "2019-12-20T06:01:37.031958Z",
+        "updated_at": "2020-07-25T05:19:13.553815Z",
+        "title": "Range: Why Generalists Triumph in a Specialized World",
+        "trello_id": "5d215df35ea5258c2c56d10a",
+        "date_started": "2019-12-07T15:05:00.014000Z",
+        "date_finished": "2019-12-20T04:31:05.459000Z",
+        "cover_attachment": {
+            "id": "5de13bb28a6b4b70a790cfbb",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5d215df35ea5258c2c56d10a/2d7b05b89db4564ac46c12ab32985ee9/41-nFxo5yTL.jpg",
+            "date": "2019-11-29T15:39:30.684Z",
+            "name": "range",
+            "bytes": 22732,
+            "fileName": "41-nFxo5yTL.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": null,
+            "edgeColor": "#8ee0c9"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/142/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "564d07a87721d8698ff010d9"
+        ],
+        "created_at": "2019-12-06T06:01:22.444647Z",
+        "updated_at": "2020-07-25T05:19:16.300988Z",
+        "title": "The Weight of Glory",
+        "trello_id": "5d62d0dbf787ae370d92e7bf",
+        "date_started": "2019-11-28T14:57:34.394000Z",
+        "date_finished": "2019-12-06T04:42:35.559000Z",
+        "cover_attachment": {
+            "id": "5dc4eac38e19dd81c54977a1",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5d62d0dbf787ae370d92e7bf/d3f0d82b0444817da8facac6c1df9f83/51i-0Ai6F0L.jpg",
+            "date": "2019-11-08T04:10:43.857Z",
+            "name": "weight-of-glory",
+            "bytes": 43397,
+            "fileName": "51i-0Ai6F0L.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": null,
+            "edgeColor": "#e96a41"
+        }
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/books/141/",
+        "genres": [
+            "564d07a87721d8698ff010dd",
+            "5e25cd38bce01a3e67ae57ee"
+        ],
+        "created_at": "2019-11-27T06:00:22.252323Z",
+        "updated_at": "2020-07-25T05:19:07.567550Z",
+        "title": "12 Rules for Life",
+        "trello_id": "5c27d743f1c75d5456840cf0",
+        "date_started": "2019-11-10T17:46:45.178000Z",
+        "date_finished": "2019-11-27T04:25:25.563000Z",
+        "cover_attachment": {
+            "id": "5dc4ea5e699da71e277b1cf4",
+            "pos": 16384,
+            "url": "https://trello-attachments.s3.amazonaws.com/564d07a87721d8698ff010d3/5c27d743f1c75d5456840cf0/027fbd5ef9a1824aacc393e25e96297d/41xrGjLlM0L._SX329_BO1%2C204%2C203%2C200_.jpg",
+            "date": "2019-11-08T04:09:02.189Z",
+            "name": "12-rules-for-life",
+            "bytes": 21437,
+            "fileName": "41xrGjLlM0L._SX329_BO1%2C204%2C203%2C200_.jpg",
+            "idMember": "53262f3fb2c5a1471e13dfe0",
+            "isUpload": true,
+            "mimeType": null,
+            "edgeColor": "#f8f8f7"
+        }
+    }
+]

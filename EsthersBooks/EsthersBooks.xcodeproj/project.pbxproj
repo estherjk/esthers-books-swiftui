@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBB5041024CD4C0C00BC9291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5040F24CD4C0C00BC9291 /* AppDelegate.swift */; };
+		EBB5041224CD4C0C00BC9291 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5041124CD4C0C00BC9291 /* SceneDelegate.swift */; };
+		EBB5041524CD4C0C00BC9291 /* EsthersBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBB5041324CD4C0C00BC9291 /* EsthersBooks.xcdatamodeld */; };
+		EBB5041724CD4C0C00BC9291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5041624CD4C0C00BC9291 /* ContentView.swift */; };
+		EBB5041924CD4C0C00BC9291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB5041824CD4C0C00BC9291 /* Assets.xcassets */; };
+		EBB5041C24CD4C0C00BC9291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB5041B24CD4C0C00BC9291 /* Preview Assets.xcassets */; };
+		EBB5041F24CD4C0C00BC9291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB5041D24CD4C0C00BC9291 /* LaunchScreen.storyboard */; };
+		EBB5042A24CD4C0C00BC9291 /* EsthersBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5042924CD4C0C00BC9291 /* EsthersBooksTests.swift */; };
+		EBB5043524CD4C0C00BC9291 /* EsthersBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5043424CD4C0C00BC9291 /* EsthersBooksUITests.swift */; };
+		EBB5045724CD4C5200BC9291 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5044324CD4C5200BC9291 /* Home.swift */; };
+		EBB5045824CD4C5200BC9291 /* radical-candor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044524CD4C5200BC9291 /* radical-candor.jpg */; };
+		EBB5045924CD4C5200BC9291 /* sampleBooks.json in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044624CD4C5200BC9291 /* sampleBooks.json */; };
+		EBB5045A24CD4C5200BC9291 /* prodigal-prophet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044724CD4C5200BC9291 /* prodigal-prophet.jpg */; };
+		EBB5045B24CD4C5200BC9291 /* 12-rules-for-life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044824CD4C5200BC9291 /* 12-rules-for-life.jpg */; };
+		EBB5045C24CD4C5200BC9291 /* justice-awakening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044924CD4C5200BC9291 /* justice-awakening.jpg */; };
+		EBB5045D24CD4C5200BC9291 /* antiracist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044A24CD4C5200BC9291 /* antiracist.jpg */; };
+		EBB5045E24CD4C5200BC9291 /* range.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044B24CD4C5200BC9291 /* range.jpg */; };
+		EBB5045F24CD4C5200BC9291 /* weight-of-glory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044C24CD4C5200BC9291 /* weight-of-glory.jpg */; };
+		EBB5046024CD4C5200BC9291 /* vanity-fair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB5044D24CD4C5200BC9291 /* vanity-fair.jpg */; };
+		EBB5046124CD4C5200BC9291 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5044F24CD4C5200BC9291 /* SampleData.swift */; };
+		EBB5046224CD4C5200BC9291 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5045124CD4C5200BC9291 /* Book.swift */; };
+		EBB5046324CD4C5200BC9291 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5045324CD4C5200BC9291 /* BookList.swift */; };
+		EBB5046424CD4C5200BC9291 /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5045424CD4C5200BC9291 /* CoverImage.swift */; };
+		EBB5046524CD4C5200BC9291 /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5045524CD4C5200BC9291 /* BookDetail.swift */; };
+		EBB5046624CD4C5200BC9291 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5045624CD4C5200BC9291 /* BookRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBB5042624CD4C0C00BC9291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB5040424CD4C0C00BC9291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB5040B24CD4C0C00BC9291;
+			remoteInfo = EsthersBooks;
+		};
+		EBB5043124CD4C0C00BC9291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB5040424CD4C0C00BC9291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB5040B24CD4C0C00BC9291;
+			remoteInfo = EsthersBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBB5040C24CD4C0C00BC9291 /* EsthersBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsthersBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB5040F24CD4C0C00BC9291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBB5041124CD4C0C00BC9291 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBB5041424CD4C0C00BC9291 /* EsthersBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EsthersBooks.xcdatamodel; sourceTree = "<group>"; };
+		EBB5041624CD4C0C00BC9291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBB5041824CD4C0C00BC9291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB5041B24CD4C0C00BC9291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBB5041E24CD4C0C00BC9291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBB5042024CD4C0C00BC9291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB5042524CD4C0C00BC9291 /* EsthersBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsthersBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB5042924CD4C0C00BC9291 /* EsthersBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsthersBooksTests.swift; sourceTree = "<group>"; };
+		EBB5042B24CD4C0C00BC9291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB5043024CD4C0C00BC9291 /* EsthersBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsthersBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB5043424CD4C0C00BC9291 /* EsthersBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsthersBooksUITests.swift; sourceTree = "<group>"; };
+		EBB5043624CD4C0C00BC9291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB5044324CD4C5200BC9291 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EBB5044524CD4C5200BC9291 /* radical-candor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "radical-candor.jpg"; sourceTree = "<group>"; };
+		EBB5044624CD4C5200BC9291 /* sampleBooks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleBooks.json; sourceTree = "<group>"; };
+		EBB5044724CD4C5200BC9291 /* prodigal-prophet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "prodigal-prophet.jpg"; sourceTree = "<group>"; };
+		EBB5044824CD4C5200BC9291 /* 12-rules-for-life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12-rules-for-life.jpg"; sourceTree = "<group>"; };
+		EBB5044924CD4C5200BC9291 /* justice-awakening.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "justice-awakening.jpg"; sourceTree = "<group>"; };
+		EBB5044A24CD4C5200BC9291 /* antiracist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antiracist.jpg; sourceTree = "<group>"; };
+		EBB5044B24CD4C5200BC9291 /* range.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = range.jpg; sourceTree = "<group>"; };
+		EBB5044C24CD4C5200BC9291 /* weight-of-glory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "weight-of-glory.jpg"; sourceTree = "<group>"; };
+		EBB5044D24CD4C5200BC9291 /* vanity-fair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vanity-fair.jpg"; sourceTree = "<group>"; };
+		EBB5044F24CD4C5200BC9291 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		EBB5045124CD4C5200BC9291 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		EBB5045324CD4C5200BC9291 /* BookList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		EBB5045424CD4C5200BC9291 /* CoverImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
+		EBB5045524CD4C5200BC9291 /* BookDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
+		EBB5045624CD4C5200BC9291 /* BookRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBB5040924CD4C0C00BC9291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042224CD4C0C00BC9291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042D24CD4C0C00BC9291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBB5040324CD4C0C00BC9291 = {
+			isa = PBXGroup;
+			children = (
+				EBB5040E24CD4C0C00BC9291 /* EsthersBooks */,
+				EBB5042824CD4C0C00BC9291 /* EsthersBooksTests */,
+				EBB5043324CD4C0C00BC9291 /* EsthersBooksUITests */,
+				EBB5040D24CD4C0C00BC9291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB5040D24CD4C0C00BC9291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5040C24CD4C0C00BC9291 /* EsthersBooks.app */,
+				EBB5042524CD4C0C00BC9291 /* EsthersBooksTests.xctest */,
+				EBB5043024CD4C0C00BC9291 /* EsthersBooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB5040E24CD4C0C00BC9291 /* EsthersBooks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5040F24CD4C0C00BC9291 /* AppDelegate.swift */,
+				EBB5041124CD4C0C00BC9291 /* SceneDelegate.swift */,
+				EBB5041624CD4C0C00BC9291 /* ContentView.swift */,
+				EBB5041824CD4C0C00BC9291 /* Assets.xcassets */,
+				EBB5041D24CD4C0C00BC9291 /* LaunchScreen.storyboard */,
+				EBB5042024CD4C0C00BC9291 /* Info.plist */,
+				EBB5041324CD4C0C00BC9291 /* EsthersBooks.xcdatamodeld */,
+				EBB5041A24CD4C0C00BC9291 /* Preview Content */,
+				EBB5044224CD4C5200BC9291 /* Home */,
+				EBB5045224CD4C5200BC9291 /* BookViews */,
+				EBB5045024CD4C5200BC9291 /* Models */,
+				EBB5044424CD4C5200BC9291 /* SampleData */,
+				EBB5044E24CD4C5200BC9291 /* Utils */,
+			);
+			path = EsthersBooks;
+			sourceTree = "<group>";
+		};
+		EBB5041A24CD4C0C00BC9291 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5041B24CD4C0C00BC9291 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBB5042824CD4C0C00BC9291 /* EsthersBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5042924CD4C0C00BC9291 /* EsthersBooksTests.swift */,
+				EBB5042B24CD4C0C00BC9291 /* Info.plist */,
+			);
+			path = EsthersBooksTests;
+			sourceTree = "<group>";
+		};
+		EBB5043324CD4C0C00BC9291 /* EsthersBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5043424CD4C0C00BC9291 /* EsthersBooksUITests.swift */,
+				EBB5043624CD4C0C00BC9291 /* Info.plist */,
+			);
+			path = EsthersBooksUITests;
+			sourceTree = "<group>";
+		};
+		EBB5044224CD4C5200BC9291 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5044324CD4C5200BC9291 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBB5044424CD4C5200BC9291 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5044624CD4C5200BC9291 /* sampleBooks.json */,
+				EBB5044824CD4C5200BC9291 /* 12-rules-for-life.jpg */,
+				EBB5044A24CD4C5200BC9291 /* antiracist.jpg */,
+				EBB5044924CD4C5200BC9291 /* justice-awakening.jpg */,
+				EBB5044724CD4C5200BC9291 /* prodigal-prophet.jpg */,
+				EBB5044524CD4C5200BC9291 /* radical-candor.jpg */,
+				EBB5044B24CD4C5200BC9291 /* range.jpg */,
+				EBB5044D24CD4C5200BC9291 /* vanity-fair.jpg */,
+				EBB5044C24CD4C5200BC9291 /* weight-of-glory.jpg */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		EBB5044E24CD4C5200BC9291 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5044F24CD4C5200BC9291 /* SampleData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBB5045024CD4C5200BC9291 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5045124CD4C5200BC9291 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBB5045224CD4C5200BC9291 /* BookViews */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5045524CD4C5200BC9291 /* BookDetail.swift */,
+				EBB5045324CD4C5200BC9291 /* BookList.swift */,
+				EBB5045624CD4C5200BC9291 /* BookRow.swift */,
+				EBB5045424CD4C5200BC9291 /* CoverImage.swift */,
+			);
+			path = BookViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBB5040B24CD4C0C00BC9291 /* EsthersBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB5043924CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooks" */;
+			buildPhases = (
+				EBB5040824CD4C0C00BC9291 /* Sources */,
+				EBB5040924CD4C0C00BC9291 /* Frameworks */,
+				EBB5040A24CD4C0C00BC9291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EsthersBooks;
+			productName = EsthersBooks;
+			productReference = EBB5040C24CD4C0C00BC9291 /* EsthersBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBB5042424CD4C0C00BC9291 /* EsthersBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB5043C24CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooksTests" */;
+			buildPhases = (
+				EBB5042124CD4C0C00BC9291 /* Sources */,
+				EBB5042224CD4C0C00BC9291 /* Frameworks */,
+				EBB5042324CD4C0C00BC9291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB5042724CD4C0C00BC9291 /* PBXTargetDependency */,
+			);
+			name = EsthersBooksTests;
+			productName = EsthersBooksTests;
+			productReference = EBB5042524CD4C0C00BC9291 /* EsthersBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBB5042F24CD4C0C00BC9291 /* EsthersBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB5043F24CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooksUITests" */;
+			buildPhases = (
+				EBB5042C24CD4C0C00BC9291 /* Sources */,
+				EBB5042D24CD4C0C00BC9291 /* Frameworks */,
+				EBB5042E24CD4C0C00BC9291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB5043224CD4C0C00BC9291 /* PBXTargetDependency */,
+			);
+			name = EsthersBooksUITests;
+			productName = EsthersBooksUITests;
+			productReference = EBB5043024CD4C0C00BC9291 /* EsthersBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB5040424CD4C0C00BC9291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Esther Jun Kim";
+				TargetAttributes = {
+					EBB5040B24CD4C0C00BC9291 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EBB5042424CD4C0C00BC9291 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EBB5040B24CD4C0C00BC9291;
+					};
+					EBB5042F24CD4C0C00BC9291 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EBB5040B24CD4C0C00BC9291;
+					};
+				};
+			};
+			buildConfigurationList = EBB5040724CD4C0C00BC9291 /* Build configuration list for PBXProject "EsthersBooks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB5040324CD4C0C00BC9291;
+			productRefGroup = EBB5040D24CD4C0C00BC9291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB5040B24CD4C0C00BC9291 /* EsthersBooks */,
+				EBB5042424CD4C0C00BC9291 /* EsthersBooksTests */,
+				EBB5042F24CD4C0C00BC9291 /* EsthersBooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBB5040A24CD4C0C00BC9291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB5046024CD4C5200BC9291 /* vanity-fair.jpg in Resources */,
+				EBB5041F24CD4C0C00BC9291 /* LaunchScreen.storyboard in Resources */,
+				EBB5045F24CD4C5200BC9291 /* weight-of-glory.jpg in Resources */,
+				EBB5045E24CD4C5200BC9291 /* range.jpg in Resources */,
+				EBB5045824CD4C5200BC9291 /* radical-candor.jpg in Resources */,
+				EBB5041C24CD4C0C00BC9291 /* Preview Assets.xcassets in Resources */,
+				EBB5041924CD4C0C00BC9291 /* Assets.xcassets in Resources */,
+				EBB5045A24CD4C5200BC9291 /* prodigal-prophet.jpg in Resources */,
+				EBB5045C24CD4C5200BC9291 /* justice-awakening.jpg in Resources */,
+				EBB5045D24CD4C5200BC9291 /* antiracist.jpg in Resources */,
+				EBB5045924CD4C5200BC9291 /* sampleBooks.json in Resources */,
+				EBB5045B24CD4C5200BC9291 /* 12-rules-for-life.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042324CD4C0C00BC9291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042E24CD4C0C00BC9291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBB5040824CD4C0C00BC9291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB5046324CD4C5200BC9291 /* BookList.swift in Sources */,
+				EBB5041524CD4C0C00BC9291 /* EsthersBooks.xcdatamodeld in Sources */,
+				EBB5046124CD4C5200BC9291 /* SampleData.swift in Sources */,
+				EBB5046224CD4C5200BC9291 /* Book.swift in Sources */,
+				EBB5041024CD4C0C00BC9291 /* AppDelegate.swift in Sources */,
+				EBB5046424CD4C5200BC9291 /* CoverImage.swift in Sources */,
+				EBB5046624CD4C5200BC9291 /* BookRow.swift in Sources */,
+				EBB5045724CD4C5200BC9291 /* Home.swift in Sources */,
+				EBB5041724CD4C0C00BC9291 /* ContentView.swift in Sources */,
+				EBB5041224CD4C0C00BC9291 /* SceneDelegate.swift in Sources */,
+				EBB5046524CD4C5200BC9291 /* BookDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042124CD4C0C00BC9291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB5042A24CD4C0C00BC9291 /* EsthersBooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB5042C24CD4C0C00BC9291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB5043524CD4C0C00BC9291 /* EsthersBooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBB5042724CD4C0C00BC9291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB5040B24CD4C0C00BC9291 /* EsthersBooks */;
+			targetProxy = EBB5042624CD4C0C00BC9291 /* PBXContainerItemProxy */;
+		};
+		EBB5043224CD4C0C00BC9291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB5040B24CD4C0C00BC9291 /* EsthersBooks */;
+			targetProxy = EBB5043124CD4C0C00BC9291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBB5041D24CD4C0C00BC9291 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBB5041E24CD4C0C00BC9291 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBB5043724CD4C0C00BC9291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBB5043824CD4C0C00BC9291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBB5043A24CD4C0C00BC9291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EsthersBooks/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EsthersBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBB5043B24CD4C0C00BC9291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EsthersBooks/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EsthersBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBB5043D24CD4C0C00BC9291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				INFOPLIST_FILE = EsthersBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsthersBooks.app/EsthersBooks";
+			};
+			name = Debug;
+		};
+		EBB5043E24CD4C0C00BC9291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				INFOPLIST_FILE = EsthersBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsthersBooks.app/EsthersBooks";
+			};
+			name = Release;
+		};
+		EBB5044024CD4C0C00BC9291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				INFOPLIST_FILE = EsthersBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EsthersBooks;
+			};
+			name = Debug;
+		};
+		EBB5044124CD4C0C00BC9291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SQCB8N94B;
+				INFOPLIST_FILE = EsthersBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.esthermakes.EsthersBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EsthersBooks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBB5040724CD4C0C00BC9291 /* Build configuration list for PBXProject "EsthersBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB5043724CD4C0C00BC9291 /* Debug */,
+				EBB5043824CD4C0C00BC9291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB5043924CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB5043A24CD4C0C00BC9291 /* Debug */,
+				EBB5043B24CD4C0C00BC9291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB5043C24CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB5043D24CD4C0C00BC9291 /* Debug */,
+				EBB5043E24CD4C0C00BC9291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB5043F24CD4C0C00BC9291 /* Build configuration list for PBXNativeTarget "EsthersBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB5044024CD4C0C00BC9291 /* Debug */,
+				EBB5044124CD4C0C00BC9291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBB5041324CD4C0C00BC9291 /* EsthersBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBB5041424CD4C0C00BC9291 /* EsthersBooks.xcdatamodel */,
+			);
+			currentVersion = EBB5041424CD4C0C00BC9291 /* EsthersBooks.xcdatamodel */;
+			path = EsthersBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBB5040424CD4C0C00BC9291 /* Project object */;
+}
