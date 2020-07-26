@@ -11,12 +11,12 @@ import SwiftUI
 struct Book: Codable {
     var url: String
     var genres: [String]
-    var created_at: String
-    var updated_at: String
+    var created_at: Date
+    var updated_at: Date
     var title: String
     var trello_id: String
-    var date_started: String
-    var date_finished: String
+    var date_started: Date
+    var date_finished: Date
     var cover_attachment: CoverAttachment
 }
 

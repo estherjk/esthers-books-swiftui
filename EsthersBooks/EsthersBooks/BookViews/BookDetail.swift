@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct BookDetail: View {
+    // Format date inside text views
+    // See https://www.hackingwithswift.com/quick-start/swiftui/how-to-format-text-inside-text-views
+    static let dateFormatter: DateFormatter =  {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }()
+    
     var book: Book
     
     var body: some View {
@@ -17,7 +25,7 @@ struct BookDetail: View {
             CoverImage(image: book.image)
             
             Text(book.title)
-                .font(.title)
+                .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding(.leading)
                 .padding(.trailing)
@@ -25,8 +33,8 @@ struct BookDetail: View {
             Spacer()
                 .frame(height: 10)
             
-            // TODO: Display human-friendly date formats
-            Text("\(book.date_started) to \(book.date_finished)")
+            Text("\(book.date_started, formatter: Self.dateFormatter) to \(book.date_finished, formatter: Self.dateFormatter)")
+                .font(.subheadline)
             
             Spacer()
         }
