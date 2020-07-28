@@ -22,16 +22,14 @@ struct BookDetail: View {
     var body: some View {
         // TODO: Replace hard-coded data
         VStack {
+            Spacer()
+            
             CoverImage(image: book.image)
             
             Text(book.title)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                .padding(.leading)
-                .padding(.trailing)
-            
-            Spacer()
-                .frame(height: 10)
+                .padding()
             
             Text("\(book.date_started, formatter: Self.dateFormatter) to \(book.date_finished, formatter: Self.dateFormatter)")
                 .font(.subheadline)
