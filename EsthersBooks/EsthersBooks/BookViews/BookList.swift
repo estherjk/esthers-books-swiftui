@@ -9,12 +9,24 @@
 import SwiftUI
 
 struct BookList: View {
+    var books: [Book] = []
+    
     var body: some View {
         NavigationView {
-            // Lists work with identifiable data. Pass trello_id since this is unique.
-            List(sampleBooksData, id: \.trello_id) { book in
-                NavigationLink(destination: BookDetail(book: book)) {
-                    BookRow(book: book)
+            
+            List {
+                HStack() {
+                    Spacer()
+                    Text("\(books.count) Books")
+                        .foregroundColor(.secondary)
+                    Spacer()
+                }
+                
+                // ForEach works with identifiable data. Pass trello_id since this is unique.
+                ForEach(books, id: \.trello_id) { book in
+                    NavigationLink(destination: BookDetail(book: book)) {
+                        BookRow(book: book)
+                    }
                 }
             }
             .navigationBarTitle(Text("Books"))
@@ -24,6 +36,6 @@ struct BookList: View {
 
 struct BookList_Previews: PreviewProvider {
     static var previews: some View {
-        BookList()
+        BookList(books: sampleBooksData)
     }
 }
