@@ -15,14 +15,13 @@ struct CoverImage: View {
         image
             .resizable()
             .aspectRatio(contentMode: .fit)
-            // ebook recommended cover size ratio is 1.6:1
-            .frame(width: 200.0, height: 320.0)
+            .frame(height: 300)
             .shadow(radius: 10)
     }
 }
 
 struct CoverImage_Previews: PreviewProvider {
     static var previews: some View {
-        CoverImage(image: Image("justice-awakening"))
+        CoverImage(image: sampleBooksData[0].image)
     }
 }
