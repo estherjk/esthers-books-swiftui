@@ -30,6 +30,9 @@ struct BookList: View {
                 }
             }
             .navigationBarTitle(Text("Books"))
+            
+            Text("Select a book")
+                .font(.largeTitle)
         }
     }
 }
