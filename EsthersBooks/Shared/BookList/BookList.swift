@@ -29,7 +29,7 @@ struct BookList: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Books"))
+            .navigationTitle("Books")
             
             Text("Select a book")
                 .font(.largeTitle)

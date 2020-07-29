@@ -1,14 +1,13 @@
 //
-//  EsthersBooksUITests.swift
-//  EsthersBooksUITests
+//  Tests_macOS.swift
+//  Tests macOS
 //
-//  Created by Esther Jun Kim on 7/25/20.
-//  Copyright © 2020 Esther Jun Kim. All rights reserved.
+//  Created by Esther Kim on 7/29/20.
 //
 
 import XCTest
 
-class EsthersBooksUITests: XCTestCase {
+class Tests_macOS: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -35,7 +34,7 @@ class EsthersBooksUITests: XCTestCase {
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+            measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
             }
         }
