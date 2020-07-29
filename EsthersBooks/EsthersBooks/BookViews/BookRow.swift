@@ -16,7 +16,8 @@ struct BookRow: View {
             book.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 50, height: 50)
+                .frame(width: 50)
+                .shadow(radius: 2)
             
             Text(book.title)
                 .lineLimit(2)
