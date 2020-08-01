@@ -29,8 +29,7 @@ struct BookDetail: View {
             Text(book.title)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                .padding(.top, 5)
-                .padding(.bottom, 5)
+                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
             
             Text("\(book.date_started, formatter: Self.dateFormatter) to \(book.date_finished, formatter: Self.dateFormatter)")
                 .font(.subheadline)
