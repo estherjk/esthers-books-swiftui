@@ -10,7 +10,25 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        BookList(books: sampleBooksData)
+        // TODO: Figure out best layout for macOS
+        HomeTabView()
+    }
+}
+
+struct HomeTabView: View {
+    var body: some View {
+        TabView {
+            LibraryView()
+                .tabItem {
+                    Image(systemName: "books.vertical")
+                    Text("Library")
+                }
+            BooksView()
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("Books")
+                }
+        }
     }
 }
 
