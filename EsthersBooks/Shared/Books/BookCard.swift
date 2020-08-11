@@ -8,16 +8,12 @@
 
 import SwiftUI
 
-struct BookRow: View {
-    var book: Book
+struct BookCard: View {
+    let book: Book
     
     var body: some View {
         HStack {
-            book.image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 50)
-                .shadow(radius: 2)
+            BookCardThumbnail(image: book.image)
             
             Text(book.title)
                 .lineLimit(2)
@@ -27,9 +23,21 @@ struct BookRow: View {
     }
 }
 
-struct BookRow_Previews: PreviewProvider {
+struct BookCardThumbnail: View {
+    let image: Image
+    
+    var body: some View {
+        image
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 50)
+            .shadow(radius: 2)
+    }
+}
+
+struct BookCard_Previews: PreviewProvider {
     static var previews: some View {
-        BookRow(book: sampleBooksData[4])
+        BookCard(book: sampleBooksData[4])
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
