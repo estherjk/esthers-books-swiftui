@@ -29,7 +29,7 @@ struct BookList: View {
                 }
             }
         }
-        .navigationBarTitle(Text(navBarTitle))
+        .navigationTitle(navBarTitle)
     }
 }
 
