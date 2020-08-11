@@ -10,6 +10,7 @@ import SwiftUI
 
 struct BookList: View {
     var books: [Book] = []
+    var navBarTitle = "Books"
     
     var body: some View {
         List {
@@ -28,6 +29,7 @@ struct BookList: View {
                 }
             }
         }
+        .navigationBarTitle(Text(navBarTitle))
     }
 }
 

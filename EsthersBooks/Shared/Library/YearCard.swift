@@ -22,6 +22,7 @@ struct YearCard: View {
                     .frame(width: 300, height: 150)
                 
                 featuredBook.image
+                    .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 120)

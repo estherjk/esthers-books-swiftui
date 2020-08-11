@@ -11,7 +11,6 @@ struct BooksView: View {
     var body: some View {
         NavigationView {
             BookList(books: sampleBooksData)
-                .navigationTitle("Books")
             
             Text("Select a book")
                 .font(.largeTitle)

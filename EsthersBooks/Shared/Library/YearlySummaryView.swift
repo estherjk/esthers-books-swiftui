@@ -23,12 +23,14 @@ struct YearlySummaryView: View {
                         let numBooks = booksByYear[year]!.count
                         let randomBookIndex = Int.random(in: 0 ..< numBooks)
                         
-                        YearCard(
-                            year: year,
-                            numBooks: numBooks,
-                            featuredBook: booksByYear[year]![randomBookIndex]
-                        )
-                        .padding()
+                        NavigationLink(destination: BookList(books: booksByYear[year]!, navBarTitle: String(year))) {
+                            YearCard(
+                                year: year,
+                                numBooks: numBooks,
+                                featuredBook: booksByYear[year]![randomBookIndex]
+                            )
+                            .padding()
+                        }
                     }
                 }
             }
