@@ -13,6 +13,10 @@ import Foundation
 import SwiftUI
 
 let sampleBooksData: [Book] = load("sampleBooks.json")
+let sampleBooksByYear = Dictionary(
+    grouping: sampleBooksData,
+    by: { Calendar.current.component(.year, from: $0.date_finished) }
+)
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

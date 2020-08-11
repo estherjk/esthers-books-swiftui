@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BookScrollView: View {
+struct ThisYearView: View {
     var books: [Book]
     
     var body: some View {
@@ -22,10 +22,11 @@ struct BookScrollView: View {
                 .padding(.leading)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top) {
+                HStack(alignment: .top, spacing: 0) {
                     ForEach(books, id: \.trello_id) { book in
                         NavigationLink(destination: BookDetail(book: book)) {
-                            BookScrollViewThumbnail(image: book.image)
+                            BookThumbnail(image: book.image)
+                                .padding()
                         }
                     }
                 }
@@ -34,7 +35,7 @@ struct BookScrollView: View {
     }
 }
 
-struct BookScrollViewThumbnail: View {
+struct BookThumbnail: View {
     let image: Image
     
     var body: some View {
@@ -44,12 +45,11 @@ struct BookScrollViewThumbnail: View {
             .aspectRatio(contentMode: .fit)
             .frame(height: 150)
             .shadow(radius: 5)
-            .padding()
     }
 }
 
-struct BookScrollView_Previews: PreviewProvider {
+struct ThisYearView_Previews: PreviewProvider {
     static var previews: some View {
-        BookScrollView(books: sampleBooksData)
+        ThisYearView(books: sampleBooksData)
     }
 }
