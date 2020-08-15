@@ -7,8 +7,17 @@
 
 import SwiftUI
 
-class TokenAPI {
+enum TokenStatus {
+    case notProcessed, processing, valid, invalid
+}
+
+class TokenAPI: ObservableObject {
+    @Published var tokenStatus: TokenStatus = TokenStatus.notProcessed
+    @Published var token: Token?
+    
     func obtainTokenPair(username: String, password: String) {
+        tokenStatus = TokenStatus.processing
+        
         guard let url = URL(string: "\(APIConstants.baseURL)/api/token/") else { return }
         
         let parameters = [
@@ -26,11 +35,15 @@ class TokenAPI {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 if let token = try? JSONDecoder().decode(Token.self, from: data) {
-                    // TODO: Use the token to make other API requests
-                    print(token)
+                    DispatchQueue.main.async {
+                        self.tokenStatus = TokenStatus.valid
+                        self.token = token
+                    }
                 }
                 else {
-                    print("obtainTokenPair error")
+                    DispatchQueue.main.async {
+                        self.tokenStatus = TokenStatus.invalid
+                    }
                 }
             }
         }

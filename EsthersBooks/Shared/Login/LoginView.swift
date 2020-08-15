@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
+    @ObservedObject var tokenAPI = TokenAPI()
     
     var body: some View {
         Form {
-            Section {
+            Section(header: TokenStatusView(tokenStatus: tokenAPI.tokenStatus)) {
                 TextField("Username", text: $username)
                     .autocapitalization(.none)
                 SecureField("Password", text: $password)
@@ -23,13 +25,32 @@ struct LoginView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        TokenAPI().obtainTokenPair(username: username, password: password)
+                        tokenAPI.obtainTokenPair(username: username, password: password)
                     }, label: {
                         Text("Log in")
                     })
                     .disabled(username.isEmpty || password.isEmpty)
                     Spacer()
                 }
+            }
+        }
+    }
+}
+
+struct TokenStatusView: View {
+    let tokenStatus: TokenStatus
+    
+    var body: some View {
+        Group {
+            switch tokenStatus {
+            case .notProcessed:
+                Text("Welcome")
+            case .processing:
+                Text("Processing...")
+            case .valid:
+                Text("Success!")
+            case .invalid:
+                Text("Invalid credentials. Try again.")
             }
         }
     }
