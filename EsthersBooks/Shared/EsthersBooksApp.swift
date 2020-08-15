@@ -11,7 +11,7 @@ import SwiftUI
 struct EsthersBooksApp: App {
     var body: some Scene {
         WindowGroup {
-            Home()
+            LoginView()
         }
     }
 }
