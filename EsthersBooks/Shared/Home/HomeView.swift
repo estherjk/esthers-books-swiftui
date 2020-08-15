@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  EsthersBooks
 //
 //  Created by Esther Jun Kim on 7/25/20.
@@ -8,14 +8,7 @@
 
 import SwiftUI
 
-struct Home: View {
-    var body: some View {
-        // TODO: Figure out best layout for macOS
-        HomeTabView()
-    }
-}
-
-struct HomeTabView: View {
+struct HomeView: View {
     var body: some View {
         TabView {
             LibraryView()
@@ -32,8 +25,8 @@ struct HomeTabView: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }

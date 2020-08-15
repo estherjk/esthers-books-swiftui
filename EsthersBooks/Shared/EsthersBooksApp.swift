@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct EsthersBooksApp: App {
+    @StateObject var tokenAPI = TokenAPI()
+    
     var body: some Scene {
         WindowGroup {
-            Home()
+            StartView()
+                .environmentObject(tokenAPI)
         }
     }
 }
