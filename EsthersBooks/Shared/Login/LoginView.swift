@@ -27,6 +27,7 @@ struct LoginView: View {
                     }, label: {
                         Text("Log in")
                     })
+                    .disabled(username.isEmpty || password.isEmpty)
                     Spacer()
                 }
             }
