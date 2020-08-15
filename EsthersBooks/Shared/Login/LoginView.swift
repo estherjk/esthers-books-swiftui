@@ -11,28 +11,31 @@ struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
-    @ObservedObject var tokenAPI = TokenAPI()
+    @EnvironmentObject var tokenAPI: TokenAPI
     
     var body: some View {
-        Form {
-            Section(header: TokenStatusView(tokenStatus: tokenAPI.tokenStatus)) {
-                TextField("Username", text: $username)
-                    .autocapitalization(.none)
-                SecureField("Password", text: $password)
-            }
-            
-            Section {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        tokenAPI.obtainTokenPair(username: username, password: password)
-                    }, label: {
-                        Text("Log in")
-                    })
-                    .disabled(username.isEmpty || password.isEmpty)
-                    Spacer()
+        NavigationView {
+            Form {
+                Section(footer: TokenStatusView(tokenStatus: tokenAPI.tokenStatus)) {
+                    TextField("Username", text: $username)
+                        .autocapitalization(.none)
+                    SecureField("Password", text: $password)
+                }
+                
+                Section {
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            tokenAPI.obtainTokenPair(username: username, password: password)
+                        }, label: {
+                            Text("Log in")
+                        })
+                        .disabled(username.isEmpty || password.isEmpty || tokenAPI.tokenStatus == TokenStatus.processing)
+                        Spacer()
+                    }
                 }
             }
+            .navigationTitle("Welcome")
         }
     }
 }
@@ -44,7 +47,7 @@ struct TokenStatusView: View {
         Group {
             switch tokenStatus {
             case .notProcessed:
-                Text("Welcome")
+                Text("Enter your credentials.")
             case .processing:
                 Text("Processing...")
             case .valid:

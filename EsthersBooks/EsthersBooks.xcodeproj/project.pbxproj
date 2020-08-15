@@ -13,6 +13,8 @@
 		EB17F15D24DF453E00DBEC3A /* YearCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17F15B24DF453E00DBEC3A /* YearCard.swift */; };
 		EB17F15F24DF492F00DBEC3A /* YearlySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */; };
 		EB17F16024DF492F00DBEC3A /* YearlySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */; };
+		EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22D9DA24E88F69009BFE74 /* StartView.swift */; };
+		EB22D9DC24E88F69009BFE74 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22D9DA24E88F69009BFE74 /* StartView.swift */; };
 		EB4D1AC924D21328006DAE8C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AC824D21328006DAE8C /* Tests_iOS.swift */; };
 		EB4D1AD424D21328006DAE8C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AD324D21328006DAE8C /* Tests_macOS.swift */; };
 		EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AAD24D21328006DAE8C /* EsthersBooksApp.swift */; };
@@ -35,11 +37,11 @@
 		EB4D1B0924D214EC006DAE8C /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0524D214EC006DAE8C /* BookList.swift */; };
 		EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6086DC24D7B24C00E06CFC /* LibraryView.swift */; };
 		EB6086DE24D7B24C00E06CFC /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6086DC24D7B24C00E06CFC /* LibraryView.swift */; };
-		EB62983824D21AA70008C43B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62983724D21AA70008C43B /* Home.swift */; };
+		EB62983824D21AA70008C43B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62983724D21AA70008C43B /* HomeView.swift */; };
 		EB62983924D21AD70008C43B /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0524D214EC006DAE8C /* BookList.swift */; };
 		EB62983A24D21AD70008C43B /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0424D214EC006DAE8C /* BookDetail.swift */; };
 		EB62983B24D21AD70008C43B /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0324D214EC006DAE8C /* BookCard.swift */; };
-		EB62983D24D21ADA0008C43B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62983724D21AA70008C43B /* Home.swift */; };
+		EB62983D24D21ADA0008C43B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62983724D21AA70008C43B /* HomeView.swift */; };
 		EB62983E24D21ADD0008C43B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0024D214B0006DAE8C /* Book.swift */; };
 		EB62983F24D21AE20008C43B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AEB24D2146C006DAE8C /* SampleData.swift */; };
 		EB62984024D21AEB0008C43B /* justice-awakening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AF124D21476006DAE8C /* justice-awakening.jpg */; };
@@ -86,6 +88,7 @@
 		EB13F34924D66FE900556794 /* ThisYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisYearView.swift; sourceTree = "<group>"; };
 		EB17F15B24DF453E00DBEC3A /* YearCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCard.swift; sourceTree = "<group>"; };
 		EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlySummaryView.swift; sourceTree = "<group>"; };
+		EB22D9DA24E88F69009BFE74 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		EB4D1AAD24D21328006DAE8C /* EsthersBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsthersBooksApp.swift; sourceTree = "<group>"; };
 		EB4D1AAF24D21328006DAE8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D1AB424D21328006DAE8C /* EsthersBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsthersBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +117,7 @@
 		EB4D1B0424D214EC006DAE8C /* BookDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		EB4D1B0524D214EC006DAE8C /* BookList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		EB6086DC24D7B24C00E06CFC /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
-		EB62983724D21AA70008C43B /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EB62983724D21AA70008C43B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EBBA413F24E2314100D49A84 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		EBBC4AE824DA5F6C0005E46E /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		EBC0798124E8314300BDD546 /* TokenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAPI.swift; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4D1AAD24D21328006DAE8C /* EsthersBooksApp.swift */,
+				EB22D9DA24E88F69009BFE74 /* StartView.swift */,
 				EB4D1AAF24D21328006DAE8C /* Assets.xcassets */,
 				EB4D1B0224D214DB006DAE8C /* Books */,
 				EB4D1B0B24D214FD006DAE8C /* Home */,
@@ -270,7 +274,7 @@
 		EB4D1B0B24D214FD006DAE8C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EB62983724D21AA70008C43B /* Home.swift */,
+				EB62983724D21AA70008C43B /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -495,12 +499,13 @@
 				EBC0798224E8314300BDD546 /* TokenAPI.swift in Sources */,
 				EBC0798824E8453F00BDD546 /* Token.swift in Sources */,
 				EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */,
+				EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
 				EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */,
 				EB4D1B0124D214B0006DAE8C /* Book.swift in Sources */,
 				EB4D1B0724D214EC006DAE8C /* BookCard.swift in Sources */,
 				EBC0798524E8335900BDD546 /* APIConstants.swift in Sources */,
-				EB62983824D21AA70008C43B /* Home.swift in Sources */,
+				EB62983824D21AA70008C43B /* HomeView.swift in Sources */,
 				EB17F15F24DF492F00DBEC3A /* YearlySummaryView.swift in Sources */,
 				EB4D1B0824D214EC006DAE8C /* BookDetail.swift in Sources */,
 			);
@@ -519,9 +524,10 @@
 				EBC0798324E8314300BDD546 /* TokenAPI.swift in Sources */,
 				EBC0798924E8453F00BDD546 /* Token.swift in Sources */,
 				EB4D1AD724D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
+				EB22D9DC24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB62983A24D21AD70008C43B /* BookDetail.swift in Sources */,
 				EBC0798D24E849E200BDD546 /* LoginView.swift in Sources */,
-				EB62983D24D21ADA0008C43B /* Home.swift in Sources */,
+				EB62983D24D21ADA0008C43B /* HomeView.swift in Sources */,
 				EB62983B24D21AD70008C43B /* BookCard.swift in Sources */,
 				EBC0798624E8335900BDD546 /* APIConstants.swift in Sources */,
 				EB17F16024DF492F00DBEC3A /* YearlySummaryView.swift in Sources */,
