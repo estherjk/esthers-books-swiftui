@@ -2,8 +2,6 @@
 //  CoverImageView.swift
 //  EsthersBooks
 //
-//  Reference: https://dev.to/gualtierofr/remote-images-in-swiftui-49jp
-//
 //  Created by Esther Kim on 8/16/20.
 //
 
@@ -17,10 +15,19 @@ struct CoverImageView: View {
     }
     
     var body: some View {
-        Image(uiImage: imageLoader.data != nil ? UIImage(data:imageLoader.data!)! : UIImage())
-            .resizable()
-            .renderingMode(.original)
-            .aspectRatio(contentMode: .fit)
+        // TODO: Is there a better way to update the placeholder image when the actual image is available?
+        if imageLoader.data != nil {
+            Image(uiImage: UIImage(data:imageLoader.data!)!)
+                .resizable()
+                .renderingMode(.original)
+                .aspectRatio(contentMode: .fit)
+        }
+        else {
+            Image(systemName: "book.closed")
+                .resizable()
+                .renderingMode(.original)
+                .aspectRatio(contentMode: .fit)
+        }
     }
 }
 
