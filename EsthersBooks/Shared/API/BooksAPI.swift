@@ -31,9 +31,9 @@ class BooksAPI: ObservableObject {
                 
                 if let books = try? decoder.decode([Book].self, from: data) {
                     DispatchQueue.main.async {
-                        self.books = books
+                        self.books = books.sorted { $0.date_finished > $1.date_finished }
                         self.booksByYear = Dictionary(
-                            grouping: books,
+                            grouping: self.books,
                             by: { Calendar.current.component(.year, from: $0.date_finished) }
                         )
                     }
