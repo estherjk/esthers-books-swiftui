@@ -37,6 +37,7 @@ struct LoginView: View {
             }
             .navigationTitle("Welcome")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
