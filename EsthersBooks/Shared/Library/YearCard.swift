@@ -21,10 +21,7 @@ struct YearCard: View {
                     .fill(backgroundColor)
                     .frame(width: 300, height: 150)
                 
-                featuredBook.image
-                    .renderingMode(.original)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                CoverImageView(imageURL: featuredBook.cover_attachment.url)
                     .frame(height: 120)
                     .shadow(radius: 2)
                     .rotationEffect(.degrees(25))

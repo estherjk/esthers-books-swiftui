@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct LibraryView: View {
+    @EnvironmentObject var booksAPI: BooksAPI
+    
     private let currentYear = Calendar.current.component(.year, from: Date())
     
     var body: some View {
         NavigationView {
             List {
-                // TODO: Find a solution that doesn't force unwrap
-                ThisYearView(books: sampleBooksByYear[currentYear]!)
+                ThisYearView(books: booksAPI.booksByYear[currentYear] ?? [])
                     .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
                 
-                YearlySummaryView()
+                YearlySummaryView(booksByYear: booksAPI.booksByYear)
                     .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
             }
             .navigationTitle("Library")

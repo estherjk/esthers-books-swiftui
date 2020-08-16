@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StartView: View {
     @EnvironmentObject var tokenAPI: TokenAPI
+    @EnvironmentObject var booksAPI: BooksAPI
     
     var body: some View {
         if (tokenAPI.tokenStatus == TokenStatus.valid) {

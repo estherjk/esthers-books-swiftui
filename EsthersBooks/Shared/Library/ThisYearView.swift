@@ -25,7 +25,7 @@ struct ThisYearView: View {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(books, id: \.trello_id) { book in
                         NavigationLink(destination: BookDetail(book: book)) {
-                            BookThumbnail(image: book.image)
+                            BookThumbnail(imageURL: book.cover_attachment.url)
                                 .padding()
                         }
                     }
@@ -36,13 +36,10 @@ struct ThisYearView: View {
 }
 
 struct BookThumbnail: View {
-    let image: Image
+    let imageURL: String
     
     var body: some View {
-        image
-            .renderingMode(.original)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+        CoverImageView(imageURL: imageURL)
             .frame(height: 150)
             .shadow(radius: 5)
     }

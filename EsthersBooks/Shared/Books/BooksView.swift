@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct BooksView: View {
+    @EnvironmentObject var booksAPI: BooksAPI
+    
     var body: some View {
         NavigationView {
-            BookList(books: sampleBooksData)
+            BookList(books: booksAPI.books)
             
             Text("Select a book")
                 .font(.largeTitle)

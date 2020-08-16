@@ -13,7 +13,7 @@ struct BookCard: View {
     
     var body: some View {
         HStack {
-            BookCardThumbnail(image: book.image)
+            BookCardThumbnail(imageURL: book.cover_attachment.url)
             
             Text(book.title)
                 .lineLimit(2)
@@ -24,12 +24,10 @@ struct BookCard: View {
 }
 
 struct BookCardThumbnail: View {
-    let image: Image
+    let imageURL: String
     
     var body: some View {
-        image
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+        CoverImageView(imageURL: imageURL)
             .frame(width: 50)
             .shadow(radius: 2)
     }
