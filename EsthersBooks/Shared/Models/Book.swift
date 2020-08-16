@@ -20,13 +20,6 @@ struct Book: Codable {
     var cover_attachment: CoverAttachment
 }
 
-extension Book {
-    // Use SampleData helper to load images
-    var image: Image {
-        ImageStore.shared.image(name: cover_attachment.name)
-    }
-}
-
 struct CoverAttachment: Codable {
     var id: String
     var pos: Int

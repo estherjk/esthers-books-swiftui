@@ -24,7 +24,7 @@ struct BookDetail: View {
         VStack(spacing: 5) {
             Spacer()
             
-            BookCover(image: book.image)
+            BookCover(imageURL: book.cover_attachment.url)
                 .padding(.bottom)
             
             Text(book.title)
@@ -42,12 +42,10 @@ struct BookDetail: View {
 }
 
 struct BookCover: View {
-    var image: Image
+    var imageURL: String
     
     var body: some View {
-        image
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+        CoverImageView(imageURL: imageURL)
             .frame(height: 300)
             .shadow(radius: 10)
     }

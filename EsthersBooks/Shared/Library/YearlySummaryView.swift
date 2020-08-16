@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct YearlySummaryView: View {
-    let booksByYear = sampleBooksByYear
+    var booksByYear = [Int: [Book]]()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -40,6 +40,6 @@ struct YearlySummaryView: View {
 
 struct YearlySummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        YearlySummaryView()
+        YearlySummaryView(booksByYear: sampleBooksByYear)
     }
 }

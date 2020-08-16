@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var tokenAPI: TokenAPI
+    @EnvironmentObject var booksAPI: BooksAPI
+    
     var body: some View {
         TabView {
             LibraryView()
@@ -22,6 +25,9 @@ struct HomeView: View {
                     Text("Books")
                 }
         }
+        .onAppear(perform: {
+            booksAPI.getBooks(accessToken: tokenAPI.token!.access)
+        })
     }
 }
 
