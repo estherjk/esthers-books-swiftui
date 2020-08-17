@@ -25,8 +25,8 @@ struct CoverImageView: View {
         else {
             Image(systemName: "book.closed")
                 .resizable()
-                .renderingMode(.original)
                 .aspectRatio(contentMode: .fit)
+                .foregroundColor(Color.primary)
         }
     }
 }
