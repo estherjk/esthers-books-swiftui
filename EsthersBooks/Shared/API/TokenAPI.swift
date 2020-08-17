@@ -33,17 +33,17 @@ class TokenAPI: ObservableObject {
         request.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let data = data {
-                if let token = try? JSONDecoder().decode(Token.self, from: data) {
-                    DispatchQueue.main.async {
-                        self.tokenStatus = TokenStatus.valid
-                        self.token = token
-                    }
+            guard let data = data else { return }
+            
+            if let token = try? JSONDecoder().decode(Token.self, from: data) {
+                DispatchQueue.main.async {
+                    self.tokenStatus = TokenStatus.valid
+                    self.token = token
                 }
-                else {
-                    DispatchQueue.main.async {
-                        self.tokenStatus = TokenStatus.invalid
-                    }
+            }
+            else {
+                DispatchQueue.main.async {
+                    self.tokenStatus = TokenStatus.invalid
                 }
             }
         }

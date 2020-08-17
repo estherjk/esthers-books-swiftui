@@ -33,11 +33,12 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
     
     do {
-        let decoder = JSONDecoder()
-        
-        // Use custom date decoding strategy (full ISO8601)
+        // Create a custom date formatter...
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+        
+        // And use it to decode the dates
+        let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         
         return try decoder.decode(T.self, from: data)
