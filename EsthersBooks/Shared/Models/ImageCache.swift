@@ -25,6 +25,9 @@ extension ImageCache {
     private static var imageCache = ImageCache()
     
     static func getImageCache() -> ImageCache {
+        imageCache.cache.countLimit = 40
+        imageCache.cache.totalCostLimit = 50_000_000  
+        
         return imageCache
     }
 }
