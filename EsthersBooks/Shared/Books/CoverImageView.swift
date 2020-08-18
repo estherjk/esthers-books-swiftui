@@ -15,9 +15,8 @@ struct CoverImageView: View {
     }
     
     var body: some View {
-        // TODO: Is there a better way to update the placeholder image when the actual image is available?
-        if imageLoader.data != nil {
-            Image(uiImage: UIImage(data:imageLoader.data!)!)
+        if let uiImage = imageLoader.uiImage {
+            Image(uiImage: uiImage)
                 .resizable()
                 .renderingMode(.original)
                 .aspectRatio(contentMode: .fit)
