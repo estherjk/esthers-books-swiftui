@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+enum BooksStatus {
+    case notProcessed, processing, fetched
+}
+
 class BooksAPI: ObservableObject {
+    @Published var booksStatus = BooksStatus.notProcessed
     @Published var books: [Book] = []
     @Published var booksByYear = [Int: [Book]]()
     
     func getBooks(accessToken: String) {
+        booksStatus = BooksStatus.processing
+        
         guard let url = URL(string: "\(APIConstants.baseURL)/api/books/") else { return }
         
         var request = URLRequest(url: url)
@@ -33,6 +40,7 @@ class BooksAPI: ObservableObject {
             
             if let books = try? decoder.decode([Book].self, from: data) {
                 DispatchQueue.main.async {
+                    self.booksStatus = BooksStatus.fetched
                     self.books = books.sorted { $0.date_finished > $1.date_finished }
                     self.booksByYear = Dictionary(
                         grouping: self.books,

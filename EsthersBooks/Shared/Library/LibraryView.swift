@@ -13,17 +13,24 @@ struct LibraryView: View {
     private let currentYear = Calendar.current.component(.year, from: Date())
     
     var body: some View {
-        NavigationView {
-            List {
-                ThisYearView(books: booksAPI.booksByYear[currentYear] ?? [])
-                    .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
-                
-                YearlySummaryView(booksByYear: booksAPI.booksByYear)
-                    .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+        if booksAPI.booksStatus == BooksStatus.fetched {
+            NavigationView {
+                List {
+                    ThisYearView(books: booksAPI.booksByYear[currentYear] ?? [])
+                        .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+                    
+                    YearlySummaryView(booksByYear: booksAPI.booksByYear)
+                        .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+                }
+                .navigationTitle("Library")
+             }
+             .navigationViewStyle(StackNavigationViewStyle())
+        }
+        else {
+            ProgressView {
+                Text("Loading...")
             }
-            .navigationTitle("Library")
-         }
-         .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 
