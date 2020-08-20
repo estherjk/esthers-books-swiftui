@@ -170,6 +170,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB307D0324EF313E00DC7398 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				EBBC85B824EB4F65006F8597 /* ImageCache.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 		EB4D1AA724D21328006DAE8C = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +201,7 @@
 				EB6086DB24D7B21C00E06CFC /* Library */,
 				EBC0798A24E849D100BDD546 /* Login */,
 				EB4D1AFF24D214A3006DAE8C /* Models */,
+				EB307D0324EF313E00DC7398 /* Stores */,
 				EBC0798024E8312800BDD546 /* API */,
 				EBBA413E24E2312900D49A84 /* Utils */,
 				EB4D1AEA24D21452006DAE8C /* SampleData */,
@@ -268,7 +277,6 @@
 			children = (
 				EB4D1B0024D214B0006DAE8C /* Book.swift */,
 				EBC0798724E8453F00BDD546 /* Token.swift */,
-				EBBC85B824EB4F65006F8597 /* ImageCache.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
