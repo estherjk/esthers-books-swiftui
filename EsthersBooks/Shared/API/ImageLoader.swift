@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 class ImageLoader : ObservableObject {
     @Published var uiImage: UIImage?
     
