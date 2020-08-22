@@ -38,7 +38,12 @@ class TokenRepository: ObservableObject {
     func verify() {
         loginStatus = LoginStatus.verifying
         
-        guard let refreshToken = tokenStore.getRefreshToken() else { return }
+        guard let refreshToken = tokenStore.getRefreshToken() else {
+            // Initiate login flow
+            loginStatus = LoginStatus.notProcessed
+            
+            return
+        }
         
         tokenAPI.verify(tokenString: refreshToken) { result in
             switch result {
