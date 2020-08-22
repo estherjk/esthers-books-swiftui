@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum LoginStatus {
-    case notProcessed, processing, valid, invalid
+    case notProcessed, processing, valid, invalid, verifying
 }
 
 class TokenRepository: ObservableObject {
@@ -26,8 +26,30 @@ class TokenRepository: ObservableObject {
             case .success(let token):
                 self.loginStatus = LoginStatus.valid
                 self.accessToken = token.access
+                
+                self.tokenStore.saveAccessToken(tokenString: token.access)
+                self.tokenStore.saveRefreshToken(tokenString: token.refresh)
             case .failure(.failed):
                 self.loginStatus = LoginStatus.invalid
+            }
+        }
+    }
+    
+    func verify() {
+        loginStatus = LoginStatus.verifying
+        
+        guard let refreshToken = tokenStore.getRefreshToken() else { return }
+        
+        tokenAPI.verify(tokenString: refreshToken) { result in
+            switch result {
+            case .success(_):
+                // TODO: Refresh access token. For now, just grab from Keychain
+                self.accessToken = self.tokenStore.getAccessToken()
+                
+                self.loginStatus = LoginStatus.valid
+            case .failure(.failed):
+                // The user needs to re-login
+                self.loginStatus = LoginStatus.notProcessed
             }
         }
     }

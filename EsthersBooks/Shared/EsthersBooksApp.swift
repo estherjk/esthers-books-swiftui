@@ -17,6 +17,9 @@ struct EsthersBooksApp: App {
             StartView()
                 .environmentObject(tokenRepository)
                 .environmentObject(booksAPI)
+                .onAppear(perform: {
+                    tokenRepository.verify()
+                })
         }
     }
 }

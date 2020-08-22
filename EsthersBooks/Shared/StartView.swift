@@ -12,7 +12,10 @@ struct StartView: View {
     @EnvironmentObject var booksAPI: BooksAPI
     
     var body: some View {
-        if (tokenRepository.loginStatus == LoginStatus.valid) {
+        if tokenRepository.loginStatus == .verifying {
+            SplashView()
+        }
+        else if tokenRepository.loginStatus == .valid {
             HomeView()
         }
         else {

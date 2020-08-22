@@ -59,6 +59,9 @@ struct LoginStatusView: View {
                 Text("Success!")
             case .invalid:
                 Text("Invalid credentials. Try again.")
+            default:
+                // Otherwise, leave blank
+                Text("")
             }
         }
     }
