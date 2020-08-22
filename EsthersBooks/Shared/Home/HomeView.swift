@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var tokenAPI: TokenAPI
+    @EnvironmentObject var tokenRepository: TokenRepository
     @EnvironmentObject var booksAPI: BooksAPI
     
     var body: some View {
@@ -26,7 +26,9 @@ struct HomeView: View {
                 }
         }
         .onAppear(perform: {
-            booksAPI.getBooks(accessToken: tokenAPI.token!.access)
+            guard let accessToken = tokenRepository.accessToken else { return }
+            
+            booksAPI.getBooks(accessToken: accessToken)
         })
     }
 }

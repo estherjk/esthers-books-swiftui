@@ -7,24 +7,58 @@
 
 import SwiftUI
 
-enum TokenStatus {
-    case notProcessed, processing, valid, invalid
-}
-
-class TokenAPI: ObservableObject {
-    @Published var tokenStatus: TokenStatus = TokenStatus.notProcessed
-    @Published var token: Token?
+class TokenAPI {
+    private struct Endpoints {
+        static let token = "/api/token/"
+        static let verify = "/api/token/verify/"
+    }
     
-    func obtainTokenPair(username: String, password: String) {
-        tokenStatus = TokenStatus.processing
+    func obtainTokenPair(with credentials: Credentials, completion: @escaping (Result<Token, NetworkError>) -> Void) {
+        guard let url = URL(string: APIConstants.baseURL + Endpoints.token) else { return }
         
-        guard let url = URL(string: "\(APIConstants.baseURL)/api/token/") else { return }
+        let request = buildPOSTRequest(url: url, parameters: [
+            "username": credentials.username,
+            "password": credentials.password
+        ])
         
-        let parameters = [
-            "username": username,
-            "password": password
-        ]
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            DispatchQueue.main.async {
+                guard let data = data else { return }
+                
+                if let token = try? JSONDecoder().decode(Token.self, from: data) {
+                    completion(.success(token))
+                }
+                else {
+                    completion(.failure(.failed))
+                }
+            }
+        }
+        .resume()
+    }
+    
+    func verify(tokenString: String, completion: @escaping (Result<Bool, NetworkError>) -> Void) {
+        guard let url = URL(string: APIConstants.baseURL + Endpoints.verify) else { return }
         
+        let request = buildPOSTRequest(url: url, parameters: [
+            "token": tokenString
+        ])
+        
+        URLSession.shared.dataTask(with: request) { (_, response, _) in
+            DispatchQueue.main.async {
+                guard let response = response as? HTTPURLResponse else { return }
+                
+                if response.statusCode == 200 {
+                    completion(.success(true))
+                }
+                else {
+                    completion(.failure(.failed))
+                }
+            }
+        }
+        .resume()
+    }
+    
+    private func buildPOSTRequest(url: URL, parameters: [String: Any]) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = [
@@ -32,21 +66,6 @@ class TokenAPI: ObservableObject {
         ]
         request.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
         
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else { return }
-            
-            if let token = try? JSONDecoder().decode(Token.self, from: data) {
-                DispatchQueue.main.async {
-                    self.tokenStatus = TokenStatus.valid
-                    self.token = token
-                }
-            }
-            else {
-                DispatchQueue.main.async {
-                    self.tokenStatus = TokenStatus.invalid
-                }
-            }
-        }
-        .resume()
+        return request
     }
 }

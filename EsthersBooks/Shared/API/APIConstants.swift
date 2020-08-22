@@ -8,3 +8,7 @@
 struct APIConstants {
     static let baseURL = "https://reading-quantified-server.herokuapp.com"
 }
+
+enum NetworkError: Error {
+    case failed
+}
