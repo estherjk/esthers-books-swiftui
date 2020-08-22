@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,8 @@
 		EB4D1B0724D214EC006DAE8C /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0324D214EC006DAE8C /* BookCard.swift */; };
 		EB4D1B0824D214EC006DAE8C /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0424D214EC006DAE8C /* BookDetail.swift */; };
 		EB4D1B0924D214EC006DAE8C /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1B0524D214EC006DAE8C /* BookList.swift */; };
+		EB4DBEF024EF596D0031267D /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = EB4DBEEF24EF596D0031267D /* KeychainAccess */; };
+		EB4DBEF224EF59B50031267D /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4DBEF124EF59B50031267D /* TokenStore.swift */; };
 		EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6086DC24D7B24C00E06CFC /* LibraryView.swift */; };
 		EB6086DE24D7B24C00E06CFC /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6086DC24D7B24C00E06CFC /* LibraryView.swift */; };
 		EB62983824D21AA70008C43B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62983724D21AA70008C43B /* HomeView.swift */; };
@@ -53,6 +55,9 @@
 		EB62984624D21AEB0008C43B /* vanity-fair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEF24D21476006DAE8C /* vanity-fair.jpg */; };
 		EB62984724D21AEB0008C43B /* sampleBooks.json in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AED24D21476006DAE8C /* sampleBooks.json */; };
 		EB62984824D21AEB0008C43B /* range.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEE24D21476006DAE8C /* range.jpg */; };
+		EB9B3E1024F168C300D4658A /* TokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E0F24F168C300D4658A /* TokenRepository.swift */; };
+		EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E1124F173BF00D4658A /* Credentials.swift */; };
+		EB9B3E1324F173F100D4658A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E1124F173BF00D4658A /* Credentials.swift */; };
 		EBA87C7724E96F4500AB0704 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C7624E96F4500AB0704 /* BooksAPI.swift */; };
 		EBA87C7824E96F4500AB0704 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C7624E96F4500AB0704 /* BooksAPI.swift */; };
 		EBA87C8424E987FA00AB0704 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C8324E987FA00AB0704 /* ImageLoader.swift */; };
@@ -124,8 +129,11 @@
 		EB4D1B0324D214EC006DAE8C /* BookCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
 		EB4D1B0424D214EC006DAE8C /* BookDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		EB4D1B0524D214EC006DAE8C /* BookList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		EB4DBEF124EF59B50031267D /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
 		EB6086DC24D7B24C00E06CFC /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		EB62983724D21AA70008C43B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB9B3E0F24F168C300D4658A /* TokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepository.swift; sourceTree = "<group>"; };
+		EB9B3E1124F173BF00D4658A /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		EBA87C7624E96F4500AB0704 /* BooksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAPI.swift; sourceTree = "<group>"; };
 		EBA87C8324E987FA00AB0704 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		EBA87C8624E989D900AB0704 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
@@ -143,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4DBEF024EF596D0031267D /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				EBBC85B824EB4F65006F8597 /* ImageCache.swift */,
+				EB4DBEF124EF59B50031267D /* TokenStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -201,6 +211,7 @@
 				EB6086DB24D7B21C00E06CFC /* Library */,
 				EBC0798A24E849D100BDD546 /* Login */,
 				EB4D1AFF24D214A3006DAE8C /* Models */,
+				EB9B3E0E24F1688500D4658A /* Repositories */,
 				EB307D0324EF313E00DC7398 /* Stores */,
 				EBC0798024E8312800BDD546 /* API */,
 				EBBA413E24E2312900D49A84 /* Utils */,
@@ -276,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4D1B0024D214B0006DAE8C /* Book.swift */,
+				EB9B3E1124F173BF00D4658A /* Credentials.swift */,
 				EBC0798724E8453F00BDD546 /* Token.swift */,
 			);
 			path = Models;
@@ -310,6 +322,14 @@
 				EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		EB9B3E0E24F1688500D4658A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B3E0F24F168C300D4658A /* TokenRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		EBBA413E24E2312900D49A84 /* Utils */ = {
@@ -355,6 +375,9 @@
 			dependencies = (
 			);
 			name = "EsthersBooks (iOS)";
+			packageProductDependencies = (
+				EB4DBEEF24EF596D0031267D /* KeychainAccess */,
+			);
 			productName = "EsthersBooks (iOS)";
 			productReference = EB4D1AB424D21328006DAE8C /* EsthersBooks.app */;
 			productType = "com.apple.product-type.application";
@@ -446,6 +469,9 @@
 				Base,
 			);
 			mainGroup = EB4D1AA724D21328006DAE8C;
+			packageReferences = (
+				EB4DBEEE24EF596D0031267D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = EB4D1AB524D21328006DAE8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -516,6 +542,7 @@
 			files = (
 				EBBC85B924EB4F65006F8597 /* ImageCache.swift in Sources */,
 				EB4D1B0924D214EC006DAE8C /* BookList.swift in Sources */,
+				EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */,
 				EB13F34A24D66FE900556794 /* ThisYearView.swift in Sources */,
 				EBA87C8424E987FA00AB0704 /* ImageLoader.swift in Sources */,
 				EB4D1AEC24D2146C006DAE8C /* SampleData.swift in Sources */,
@@ -523,8 +550,10 @@
 				EB17F15C24DF453E00DBEC3A /* YearCard.swift in Sources */,
 				EBBA414024E2314100D49A84 /* ColorExtensions.swift in Sources */,
 				EBC0798224E8314300BDD546 /* TokenAPI.swift in Sources */,
+				EB9B3E1024F168C300D4658A /* TokenRepository.swift in Sources */,
 				EBC0798824E8453F00BDD546 /* Token.swift in Sources */,
 				EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */,
+				EB4DBEF224EF59B50031267D /* TokenStore.swift in Sources */,
 				EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
 				EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */,
@@ -559,6 +588,7 @@
 				EBC0798D24E849E200BDD546 /* LoginView.swift in Sources */,
 				EB62983D24D21ADA0008C43B /* HomeView.swift in Sources */,
 				EBA87C7824E96F4500AB0704 /* BooksAPI.swift in Sources */,
+				EB9B3E1324F173F100D4658A /* Credentials.swift in Sources */,
 				EB62983B24D21AD70008C43B /* BookCard.swift in Sources */,
 				EBA87C8824E989D900AB0704 /* CoverImageView.swift in Sources */,
 				EBC0798624E8335900BDD546 /* APIConstants.swift in Sources */,
@@ -942,6 +972,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB4DBEEE24EF596D0031267D /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB4DBEEF24EF596D0031267D /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4DBEEE24EF596D0031267D /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB4D1AA824D21328006DAE8C /* Project object */;
 }

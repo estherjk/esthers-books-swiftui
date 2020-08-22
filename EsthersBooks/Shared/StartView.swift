@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct StartView: View {
-    @EnvironmentObject var tokenAPI: TokenAPI
+    @EnvironmentObject var tokenRepository: TokenRepository
     @EnvironmentObject var booksAPI: BooksAPI
     
     var body: some View {
-        if (tokenAPI.tokenStatus == TokenStatus.valid) {
+        if (tokenRepository.loginStatus == LoginStatus.valid) {
             HomeView()
         }
         else {

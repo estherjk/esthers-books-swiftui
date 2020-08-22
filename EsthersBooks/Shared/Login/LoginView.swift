@@ -11,12 +11,12 @@ struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
-    @EnvironmentObject var tokenAPI: TokenAPI
+    @EnvironmentObject var tokenRepository: TokenRepository
     
     var body: some View {
         NavigationView {
             Form {
-                Section(footer: TokenStatusView(tokenStatus: tokenAPI.tokenStatus)) {
+                Section(footer: LoginStatusView(loginStatus: tokenRepository.loginStatus)) {
                     TextField("Username", text: $username)
                         .autocapitalization(.none)
                     SecureField("Password", text: $password)
@@ -25,12 +25,16 @@ struct LoginView: View {
                 Section {
                     HStack {
                         Spacer()
+                        
                         Button(action: {
-                            tokenAPI.obtainTokenPair(username: username, password: password)
+                            tokenRepository.login(with: Credentials(username: username, password: password))
                         }, label: {
                             Text("Log in")
                         })
-                        .disabled(username.isEmpty || password.isEmpty || tokenAPI.tokenStatus == TokenStatus.processing)
+                        .disabled(username.isEmpty ||
+                                  password.isEmpty ||
+                                    tokenRepository.loginStatus == LoginStatus.processing)
+                        
                         Spacer()
                     }
                 }
@@ -41,12 +45,12 @@ struct LoginView: View {
     }
 }
 
-struct TokenStatusView: View {
-    let tokenStatus: TokenStatus
+struct LoginStatusView: View {
+    let loginStatus: LoginStatus
     
     var body: some View {
         Group {
-            switch tokenStatus {
+            switch loginStatus {
             case .notProcessed:
                 Text("Enter your credentials.")
             case .processing:
