@@ -61,7 +61,6 @@
 		EBA87C7724E96F4500AB0704 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C7624E96F4500AB0704 /* BooksAPI.swift */; };
 		EBA87C7824E96F4500AB0704 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C7624E96F4500AB0704 /* BooksAPI.swift */; };
 		EBA87C8424E987FA00AB0704 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C8324E987FA00AB0704 /* ImageLoader.swift */; };
-		EBA87C8524E987FA00AB0704 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C8324E987FA00AB0704 /* ImageLoader.swift */; };
 		EBA87C8724E989D900AB0704 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C8624E989D900AB0704 /* CoverImageView.swift */; };
 		EBA87C8824E989D900AB0704 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA87C8624E989D900AB0704 /* CoverImageView.swift */; };
 		EBADAB6924F1B4A0007723BF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADAB6824F1B4A0007723BF /* SplashView.swift */; };
@@ -331,6 +330,7 @@
 		EB9B3E0E24F1688500D4658A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				EBA87C8324E987FA00AB0704 /* ImageLoader.swift */,
 				EB9B3E0F24F168C300D4658A /* TokenRepository.swift */,
 			);
 			path = Repositories;
@@ -358,7 +358,6 @@
 				EBC0798424E8335900BDD546 /* APIConstants.swift */,
 				EBA87C7624E96F4500AB0704 /* BooksAPI.swift */,
 				EBC0798124E8314300BDD546 /* TokenAPI.swift */,
-				EBA87C8324E987FA00AB0704 /* ImageLoader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -588,7 +587,6 @@
 				EBBC85BA24EB4F65006F8597 /* ImageCache.swift in Sources */,
 				EB62983924D21AD70008C43B /* BookList.swift in Sources */,
 				EB13F34B24D66FE900556794 /* ThisYearView.swift in Sources */,
-				EBA87C8524E987FA00AB0704 /* ImageLoader.swift in Sources */,
 				EBBC4AEA24DA5F6C0005E46E /* BooksView.swift in Sources */,
 				EB6086DE24D7B24C00E06CFC /* LibraryView.swift in Sources */,
 				EB17F15D24DF453E00DBEC3A /* YearCard.swift in Sources */,
