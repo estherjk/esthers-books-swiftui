@@ -29,7 +29,6 @@ class UserAPI: ObservableObject {
             if let user = try? JSONDecoder().decode(User.self, from: data) {
                 DispatchQueue.main.async {
                     self.user = user
-                    print(user)
                 }
             }
         }
