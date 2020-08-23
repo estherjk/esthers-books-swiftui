@@ -27,7 +27,6 @@ class ImageLoader : ObservableObject {
     private func loadImageFromCache() {
         guard let cachedUIImage = imageCache.get(forKey: urlString) else { return }
         
-        print("loadImageFromCache: \(urlString)")
         uiImage = cachedUIImage
         imageLoadedFromCache = true
     }
@@ -41,7 +40,6 @@ class ImageLoader : ObservableObject {
             DispatchQueue.main.async {
                 guard let remoteUIImage = UIImage(data: data) else { return }
                 
-                print("loadImageFromRemote: \(self.urlString)")
                 self.imageCache.set(forKey: self.urlString, uiImage: remoteUIImage)
                 self.uiImage = remoteUIImage
             }

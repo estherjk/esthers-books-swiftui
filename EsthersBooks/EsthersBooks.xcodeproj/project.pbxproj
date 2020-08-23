@@ -80,6 +80,10 @@
 		EBC0798924E8453F00BDD546 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0798724E8453F00BDD546 /* Token.swift */; };
 		EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0798B24E849E200BDD546 /* LoginView.swift */; };
 		EBC0798D24E849E200BDD546 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0798B24E849E200BDD546 /* LoginView.swift */; };
+		EBF38C8B24F2C2FA0011EA14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF38C8A24F2C2FA0011EA14 /* User.swift */; };
+		EBF38C8C24F2C2FA0011EA14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF38C8A24F2C2FA0011EA14 /* User.swift */; };
+		EBF38C8E24F2C3460011EA14 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF38C8D24F2C3460011EA14 /* UserAPI.swift */; };
+		EBF38C8F24F2C3460011EA14 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF38C8D24F2C3460011EA14 /* UserAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,8 @@
 		EBC0798424E8335900BDD546 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EBC0798724E8453F00BDD546 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		EBC0798B24E849E200BDD546 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EBF38C8A24F2C2FA0011EA14 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EBF38C8D24F2C3460011EA14 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +301,7 @@
 				EB4D1B0024D214B0006DAE8C /* Book.swift */,
 				EB9B3E1124F173BF00D4658A /* Credentials.swift */,
 				EBC0798724E8453F00BDD546 /* Token.swift */,
+				EBF38C8A24F2C2FA0011EA14 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,6 +376,7 @@
 				EBC0798424E8335900BDD546 /* APIConstants.swift */,
 				EBA87C7624E96F4500AB0704 /* BooksAPI.swift */,
 				EBC0798124E8314300BDD546 /* TokenAPI.swift */,
+				EBF38C8D24F2C3460011EA14 /* UserAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -565,6 +573,7 @@
 				EBBC85B924EB4F65006F8597 /* ImageCache.swift in Sources */,
 				EB8B84A324F220AF00E127AF /* ProfileView.swift in Sources */,
 				EB4D1B0924D214EC006DAE8C /* BookList.swift in Sources */,
+				EBF38C8E24F2C3460011EA14 /* UserAPI.swift in Sources */,
 				EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */,
 				EB13F34A24D66FE900556794 /* ThisYearView.swift in Sources */,
 				EBA87C8424E987FA00AB0704 /* ImageLoader.swift in Sources */,
@@ -582,6 +591,7 @@
 				EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */,
 				EB4D1B0124D214B0006DAE8C /* Book.swift in Sources */,
 				EBA87C7724E96F4500AB0704 /* BooksAPI.swift in Sources */,
+				EBF38C8B24F2C2FA0011EA14 /* User.swift in Sources */,
 				EB4D1B0724D214EC006DAE8C /* BookCard.swift in Sources */,
 				EBA87C8724E989D900AB0704 /* CoverImageView.swift in Sources */,
 				EBADAB6924F1B4A0007723BF /* SplashView.swift in Sources */,
@@ -616,8 +626,10 @@
 				EB62983B24D21AD70008C43B /* BookCard.swift in Sources */,
 				EBA87C8824E989D900AB0704 /* CoverImageView.swift in Sources */,
 				EBC0798624E8335900BDD546 /* APIConstants.swift in Sources */,
+				EBF38C8C24F2C2FA0011EA14 /* User.swift in Sources */,
 				EB17F16024DF492F00DBEC3A /* YearlySummaryView.swift in Sources */,
 				EB62983F24D21AE20008C43B /* SampleData.swift in Sources */,
+				EBF38C8F24F2C3460011EA14 /* UserAPI.swift in Sources */,
 				EBBA414424E241E500D49A84 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
