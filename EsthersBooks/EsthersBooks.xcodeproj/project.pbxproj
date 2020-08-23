@@ -55,6 +55,7 @@
 		EB62984624D21AEB0008C43B /* vanity-fair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEF24D21476006DAE8C /* vanity-fair.jpg */; };
 		EB62984724D21AEB0008C43B /* sampleBooks.json in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AED24D21476006DAE8C /* sampleBooks.json */; };
 		EB62984824D21AEB0008C43B /* range.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEE24D21476006DAE8C /* range.jpg */; };
+		EB8B84A324F220AF00E127AF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B84A224F220AF00E127AF /* ProfileView.swift */; };
 		EB9B3E1024F168C300D4658A /* TokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E0F24F168C300D4658A /* TokenRepository.swift */; };
 		EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E1124F173BF00D4658A /* Credentials.swift */; };
 		EB9B3E1324F173F100D4658A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E1124F173BF00D4658A /* Credentials.swift */; };
@@ -133,6 +134,7 @@
 		EB4DBEF124EF59B50031267D /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
 		EB6086DC24D7B24C00E06CFC /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		EB62983724D21AA70008C43B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB8B84A224F220AF00E127AF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB9B3E0F24F168C300D4658A /* TokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepository.swift; sourceTree = "<group>"; };
 		EB9B3E1124F173BF00D4658A /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		EBA87C7624E96F4500AB0704 /* BooksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAPI.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				EB4D1B0B24D214FD006DAE8C /* Home */,
 				EB6086DB24D7B21C00E06CFC /* Library */,
 				EBC0798A24E849D100BDD546 /* Login */,
+				EB8B84A124F2209F00E127AF /* Profile */,
 				EBADAB6724F1B47B007723BF /* Splash */,
 				EB4D1AFF24D214A3006DAE8C /* Models */,
 				EB9B3E0E24F1688500D4658A /* Repositories */,
@@ -325,6 +328,14 @@
 				EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		EB8B84A124F2209F00E127AF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B84A224F220AF00E127AF /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		EB9B3E0E24F1688500D4658A /* Repositories */ = {
@@ -552,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBC85B924EB4F65006F8597 /* ImageCache.swift in Sources */,
+				EB8B84A324F220AF00E127AF /* ProfileView.swift in Sources */,
 				EB4D1B0924D214EC006DAE8C /* BookList.swift in Sources */,
 				EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */,
 				EB13F34A24D66FE900556794 /* ThisYearView.swift in Sources */,

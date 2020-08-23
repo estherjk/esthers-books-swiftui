@@ -19,11 +19,19 @@ struct HomeView: View {
                     Image(systemName: "books.vertical")
                     Text("Library")
                 }
+            
             BooksView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Books")
                 }
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.circle")
+                    Text("Profile")
+                }
+            
         }
         .onAppear(perform: {
             guard let accessToken = tokenRepository.accessToken else { return }
