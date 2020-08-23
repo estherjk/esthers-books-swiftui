@@ -37,5 +37,6 @@ struct LibraryView: View {
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
+            .environmentObject(BooksAPI())
     }
 }
