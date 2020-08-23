@@ -28,7 +28,7 @@ struct HomeView: View {
             
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person.circle")
+                    Image(systemName: "person.crop.circle")
                     Text("Profile")
                 }
             
