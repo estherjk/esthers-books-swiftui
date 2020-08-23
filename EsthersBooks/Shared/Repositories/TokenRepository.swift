@@ -58,4 +58,11 @@ class TokenRepository: ObservableObject {
             }
         }
     }
+    
+    func logout() {
+        tokenStore.removeAccessToken()
+        tokenStore.removeRefreshToken()
+        
+        loginStatus = LoginStatus.notProcessed
+    }
 }

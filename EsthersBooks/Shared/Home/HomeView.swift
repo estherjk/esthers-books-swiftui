@@ -19,11 +19,19 @@ struct HomeView: View {
                     Image(systemName: "books.vertical")
                     Text("Library")
                 }
+            
             BooksView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Books")
                 }
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Profile")
+                }
+            
         }
         .onAppear(perform: {
             guard let accessToken = tokenRepository.accessToken else { return }
@@ -36,5 +44,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(TokenRepository())
+            .environmentObject(BooksAPI())
     }
 }

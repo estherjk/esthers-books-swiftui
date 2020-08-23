@@ -24,11 +24,19 @@ class TokenStore {
         return keychain[Keys.accessToken]
     }
     
+    func removeAccessToken() {
+        keychain[Keys.accessToken] = nil
+    }
+    
     func saveRefreshToken(tokenString: String) {
         keychain[Keys.refreshToken] = tokenString
     }
     
     func getRefreshToken() -> String? {
         return keychain[Keys.refreshToken]
+    }
+    
+    func removeRefreshToken() {
+        keychain[Keys.refreshToken] = nil
     }
 }

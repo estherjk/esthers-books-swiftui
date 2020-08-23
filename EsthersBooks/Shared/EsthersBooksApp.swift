@@ -11,12 +11,14 @@ import SwiftUI
 struct EsthersBooksApp: App {
     @StateObject var tokenRepository = TokenRepository()
     @StateObject var booksAPI = BooksAPI()
+    @StateObject var userAPI = UserAPI()
     
     var body: some Scene {
         WindowGroup {
             StartView()
                 .environmentObject(tokenRepository)
                 .environmentObject(booksAPI)
+                .environmentObject(userAPI)
                 .onAppear(perform: {
                     tokenRepository.verify()
                 })
