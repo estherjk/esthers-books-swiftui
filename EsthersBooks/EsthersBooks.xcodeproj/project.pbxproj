@@ -15,6 +15,8 @@
 		EB17F16024DF492F00DBEC3A /* YearlySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */; };
 		EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22D9DA24E88F69009BFE74 /* StartView.swift */; };
 		EB22D9DC24E88F69009BFE74 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22D9DA24E88F69009BFE74 /* StartView.swift */; };
+		EB3F214224F3149900836D1F /* BookGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F214124F3149900836D1F /* BookGrid.swift */; };
+		EB3F214324F3149900836D1F /* BookGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F214124F3149900836D1F /* BookGrid.swift */; };
 		EB4D1AC924D21328006DAE8C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AC824D21328006DAE8C /* Tests_iOS.swift */; };
 		EB4D1AD424D21328006DAE8C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AD324D21328006DAE8C /* Tests_macOS.swift */; };
 		EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D1AAD24D21328006DAE8C /* EsthersBooksApp.swift */; };
@@ -108,6 +110,7 @@
 		EB17F15B24DF453E00DBEC3A /* YearCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCard.swift; sourceTree = "<group>"; };
 		EB17F15E24DF492F00DBEC3A /* YearlySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlySummaryView.swift; sourceTree = "<group>"; };
 		EB22D9DA24E88F69009BFE74 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		EB3F214124F3149900836D1F /* BookGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGrid.swift; sourceTree = "<group>"; };
 		EB4D1AAD24D21328006DAE8C /* EsthersBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsthersBooksApp.swift; sourceTree = "<group>"; };
 		EB4D1AAF24D21328006DAE8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D1AB424D21328006DAE8C /* EsthersBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsthersBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +314,7 @@
 			children = (
 				EB4D1B0324D214EC006DAE8C /* BookCard.swift */,
 				EB4D1B0424D214EC006DAE8C /* BookDetail.swift */,
+				EB3F214124F3149900836D1F /* BookGrid.swift */,
 				EB4D1B0524D214EC006DAE8C /* BookList.swift */,
 				EBBC4AE824DA5F6C0005E46E /* BooksView.swift */,
 				EBA87C8624E989D900AB0704 /* CoverImageView.swift */,
@@ -586,6 +590,7 @@
 				EBC0798824E8453F00BDD546 /* Token.swift in Sources */,
 				EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */,
 				EB4DBEF224EF59B50031267D /* TokenStore.swift in Sources */,
+				EB3F214224F3149900836D1F /* BookGrid.swift in Sources */,
 				EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
 				EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */,
@@ -618,6 +623,7 @@
 				EB4D1AD724D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
 				EB22D9DC24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB62983A24D21AD70008C43B /* BookDetail.swift in Sources */,
+				EB3F214324F3149900836D1F /* BookGrid.swift in Sources */,
 				EBC0798D24E849E200BDD546 /* LoginView.swift in Sources */,
 				EB62983D24D21ADA0008C43B /* HomeView.swift in Sources */,
 				EBA87C7824E96F4500AB0704 /* BooksAPI.swift in Sources */,
