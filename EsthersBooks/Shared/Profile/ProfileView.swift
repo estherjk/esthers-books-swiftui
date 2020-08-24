@@ -57,7 +57,7 @@ struct ProfileView: View {
                         }
                     }
                 }
-                .frame(maxWidth: 600)
+                .frame(maxWidth: 700)
             }
             .navigationTitle("Profile")
         }

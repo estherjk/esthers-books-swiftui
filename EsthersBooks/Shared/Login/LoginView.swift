@@ -43,7 +43,7 @@ struct LoginView: View {
                         }
                     }
                 }
-                .frame(maxWidth: 600)
+                .frame(maxWidth: 700)
             }
             .navigationTitle("Welcome")
         }
