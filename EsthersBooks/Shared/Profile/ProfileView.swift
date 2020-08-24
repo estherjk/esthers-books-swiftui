@@ -13,45 +13,51 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                if let user = userAPI.user {
+            ZStack {
+                Color(UIColor.systemGroupedBackground)
+                    .edgesIgnoringSafeArea(.all)
+                
+                Form {
+                    if let user = userAPI.user {
+                        Section {
+                            HStack {
+                                ProfileItemLabel(label: "First name")
+                                Text(user.first_name)
+                            }
+                            
+                            HStack {
+                                ProfileItemLabel(label: "Last name")
+                                Text(user.last_name)
+                            }
+                            
+                            HStack {
+                                ProfileItemLabel(label: "Username")
+                                Text(user.username)
+                            }
+                            
+                            HStack {
+                                ProfileItemLabel(label: "Email")
+                                Text(user.email)
+                            }
+                        }
+                    }
+                    
                     Section {
                         HStack {
-                            ProfileItemLabel(label: "First name")
-                            Text(user.first_name)
-                        }
-                        
-                        HStack {
-                            ProfileItemLabel(label: "Last name")
-                            Text(user.last_name)
-                        }
-                        
-                        HStack {
-                            ProfileItemLabel(label: "Username")
-                            Text(user.username)
-                        }
-                        
-                        HStack {
-                            ProfileItemLabel(label: "Email")
-                            Text(user.email)
+                            Spacer()
+                            
+                            Button(action: {
+                                tokenRepository.logout()
+                            }, label: {
+                                Text("Log out")
+                            })
+                            .foregroundColor(Color.red)
+                            
+                            Spacer()
                         }
                     }
                 }
-                
-                Section {
-                    HStack {
-                        Spacer()
-                        
-                        Button(action: {
-                            tokenRepository.logout()
-                        }, label: {
-                            Text("Log out")
-                        })
-                        .foregroundColor(Color.red)
-                        
-                        Spacer()
-                    }
-                }
+                .frame(maxWidth: 700)
             }
             .navigationTitle("Profile")
         }
