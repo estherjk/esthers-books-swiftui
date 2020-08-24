@@ -15,29 +15,35 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(footer: LoginStatusView(loginStatus: tokenRepository.loginStatus)) {
-                    TextField("Username", text: $username)
-                        .autocapitalization(.none)
-                    SecureField("Password", text: $password)
-                }
+            ZStack {
+                Color(UIColor.systemGroupedBackground)
+                    .edgesIgnoringSafeArea(.all)
                 
-                Section {
-                    HStack {
-                        Spacer()
-                        
-                        Button(action: {
-                            tokenRepository.login(with: Credentials(username: username, password: password))
-                        }, label: {
-                            Text("Log in")
-                        })
-                        .disabled(username.isEmpty ||
-                                  password.isEmpty ||
-                                    tokenRepository.loginStatus == LoginStatus.processing)
-                        
-                        Spacer()
+                Form {
+                    Section(footer: LoginStatusView(loginStatus: tokenRepository.loginStatus)) {
+                        TextField("Username", text: $username)
+                            .autocapitalization(.none)
+                        SecureField("Password", text: $password)
+                    }
+                    
+                    Section {
+                        HStack {
+                            Spacer()
+                            
+                            Button(action: {
+                                tokenRepository.login(with: Credentials(username: username, password: password))
+                            }, label: {
+                                Text("Log in")
+                            })
+                            .disabled(username.isEmpty ||
+                                      password.isEmpty ||
+                                        tokenRepository.loginStatus == LoginStatus.processing)
+                            
+                            Spacer()
+                        }
                     }
                 }
+                .frame(maxWidth: 600)
             }
             .navigationTitle("Welcome")
         }
