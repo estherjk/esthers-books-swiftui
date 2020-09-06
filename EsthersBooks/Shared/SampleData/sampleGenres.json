@@ -1,0 +1,90 @@
+[
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/8/",
+        "created_at": "2018-12-16T22:34:56.567150Z",
+        "updated_at": "2019-12-28T18:30:59.719453Z",
+        "name": "Design",
+        "trello_id": "564d07a87721d8698ff010de",
+        "color": "pink"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/7/",
+        "created_at": "2018-12-16T22:34:53.727144Z",
+        "updated_at": "2019-12-28T18:31:06.420040Z",
+        "name": "Poetry / plays",
+        "trello_id": "564d07a87721d8698ff010db",
+        "color": "red"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/6/",
+        "created_at": "2018-12-16T22:34:51.125087Z",
+        "updated_at": "2019-12-28T18:31:16.134552Z",
+        "name": "Business",
+        "trello_id": "568fe9b1fb396fe706380fbd",
+        "color": "black"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/4/",
+        "created_at": "2018-12-16T22:34:46.279698Z",
+        "updated_at": "2019-12-28T18:31:36.802046Z",
+        "name": "Biography",
+        "trello_id": "564d07a87721d8698ff010dc",
+        "color": "purple"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/2/",
+        "created_at": "2018-12-16T22:34:41.405119Z",
+        "updated_at": "2019-12-28T18:32:02.421114Z",
+        "name": "Non-fiction",
+        "trello_id": "564d07a87721d8698ff010dd",
+        "color": "blue"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/1/",
+        "created_at": "2018-12-16T22:34:38.977247Z",
+        "updated_at": "2019-12-28T18:32:08.990032Z",
+        "name": "Fiction",
+        "trello_id": "564d07a87721d8698ff010d8",
+        "color": "green"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/5/",
+        "created_at": "2018-12-16T22:34:48.714785Z",
+        "updated_at": "2020-01-20T16:00:32.375599Z",
+        "name": "Technology",
+        "trello_id": "564d07a87721d8698ff010da",
+        "color": "orange"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/9/",
+        "created_at": "2020-01-20T16:00:32.716372Z",
+        "updated_at": "2020-01-20T16:00:32.716429Z",
+        "name": "Science",
+        "trello_id": "5e25cd38bce01a3e67ae57ee",
+        "color": "lime"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/3/",
+        "created_at": "2018-12-16T22:34:43.847953Z",
+        "updated_at": "2020-05-03T14:41:48.699557Z",
+        "name": "Christian",
+        "trello_id": "564d07a87721d8698ff010d9",
+        "color": "yellow"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/10/",
+        "created_at": "2020-01-20T16:00:32.784849Z",
+        "updated_at": "2020-08-09T17:26:18.200451Z",
+        "name": "History",
+        "trello_id": "5e25c7bb2d68c74568a63cde",
+        "color": "sky"
+    },
+    {
+        "url": "https://reading-quantified-server.herokuapp.com/api/genres/11/",
+        "created_at": "2020-08-24T06:00:44.581962Z",
+        "updated_at": "2020-08-24T06:00:44.582024Z",
+        "name": "Audiobooks",
+        "trello_id": "5f434113d4c64c417e117c3a",
+        "color": "green"
+    }
+]

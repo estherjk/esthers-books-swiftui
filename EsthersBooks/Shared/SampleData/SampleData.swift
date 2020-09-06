@@ -18,6 +18,8 @@ let sampleBooksByYear = Dictionary(
     by: { Calendar.current.component(.year, from: $0.date_finished) }
 )
 
+let sampleGenresData: [Genre] = load("sampleGenres.json")
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

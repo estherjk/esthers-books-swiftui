@@ -44,6 +44,9 @@
 		EB62984624D21AEB0008C43B /* vanity-fair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEF24D21476006DAE8C /* vanity-fair.jpg */; };
 		EB62984724D21AEB0008C43B /* sampleBooks.json in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AED24D21476006DAE8C /* sampleBooks.json */; };
 		EB62984824D21AEB0008C43B /* range.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB4D1AEE24D21476006DAE8C /* range.jpg */; };
+		EB703B4A250538D60020D3F3 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB703B49250538D60020D3F3 /* Genre.swift */; };
+		EB703B4C250539CB0020D3F3 /* GenresAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB703B4B250539CB0020D3F3 /* GenresAPI.swift */; };
+		EB703B50250540670020D3F3 /* sampleGenres.json in Resources */ = {isa = PBXBuildFile; fileRef = EB703B4F250540670020D3F3 /* sampleGenres.json */; };
 		EB8B84A324F220AF00E127AF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B84A224F220AF00E127AF /* ProfileView.swift */; };
 		EB9B3E1024F168C300D4658A /* TokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E0F24F168C300D4658A /* TokenRepository.swift */; };
 		EB9B3E1224F173BF00D4658A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B3E1124F173BF00D4658A /* Credentials.swift */; };
@@ -116,6 +119,9 @@
 		EB6086DC24D7B24C00E06CFC /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		EB6253B124F4918F005ADFD8 /* EsthersBooks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EsthersBooks.entitlements; sourceTree = "<group>"; };
 		EB62983724D21AA70008C43B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB703B49250538D60020D3F3 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		EB703B4B250539CB0020D3F3 /* GenresAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresAPI.swift; sourceTree = "<group>"; };
+		EB703B4F250540670020D3F3 /* sampleGenres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleGenres.json; sourceTree = "<group>"; };
 		EB8B84A224F220AF00E127AF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB9B3E0F24F168C300D4658A /* TokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepository.swift; sourceTree = "<group>"; };
 		EB9B3E1124F173BF00D4658A /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
@@ -262,6 +268,7 @@
 			children = (
 				EB4D1AEB24D2146C006DAE8C /* SampleData.swift */,
 				EB4D1AED24D21476006DAE8C /* sampleBooks.json */,
+				EB703B4F250540670020D3F3 /* sampleGenres.json */,
 				EB4D1AF024D21476006DAE8C /* 12-rules-for-life.jpg */,
 				EB4D1AF224D21476006DAE8C /* antiracist.jpg */,
 				EB4D1AF124D21476006DAE8C /* justice-awakening.jpg */,
@@ -279,6 +286,7 @@
 			children = (
 				EB4D1B0024D214B0006DAE8C /* Book.swift */,
 				EB9B3E1124F173BF00D4658A /* Credentials.swift */,
+				EB703B49250538D60020D3F3 /* Genre.swift */,
 				EBC0798724E8453F00BDD546 /* Token.swift */,
 				EBF38C8A24F2C2FA0011EA14 /* User.swift */,
 			);
@@ -355,6 +363,7 @@
 			children = (
 				EBC0798424E8335900BDD546 /* APIConstants.swift */,
 				EBA87C7624E96F4500AB0704 /* BooksAPI.swift */,
+				EB703B4B250539CB0020D3F3 /* GenresAPI.swift */,
 				EBC0798124E8314300BDD546 /* TokenAPI.swift */,
 				EBF38C8D24F2C3460011EA14 /* UserAPI.swift */,
 			);
@@ -499,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB703B50250540670020D3F3 /* sampleGenres.json in Resources */,
 				EB4D1AF824D21476006DAE8C /* vanity-fair.jpg in Resources */,
 				EB4D1AFA24D21476006DAE8C /* justice-awakening.jpg in Resources */,
 				EB4D1AFE24D21476006DAE8C /* prodigal-prophet.jpg in Resources */,
@@ -558,6 +568,7 @@
 				EB13F34A24D66FE900556794 /* ThisYearView.swift in Sources */,
 				EBA87C8424E987FA00AB0704 /* ImageLoader.swift in Sources */,
 				EB4D1AEC24D2146C006DAE8C /* SampleData.swift in Sources */,
+				EB703B4C250539CB0020D3F3 /* GenresAPI.swift in Sources */,
 				EBBC4AE924DA5F6C0005E46E /* BooksView.swift in Sources */,
 				EB17F15C24DF453E00DBEC3A /* YearCard.swift in Sources */,
 				EBBA414024E2314100D49A84 /* ColorExtensions.swift in Sources */,
@@ -567,6 +578,7 @@
 				EB6086DD24D7B24C00E06CFC /* LibraryView.swift in Sources */,
 				EB4DBEF224EF59B50031267D /* TokenStore.swift in Sources */,
 				EB3F214224F3149900836D1F /* BookGrid.swift in Sources */,
+				EB703B4A250538D60020D3F3 /* Genre.swift in Sources */,
 				EB22D9DB24E88F69009BFE74 /* StartView.swift in Sources */,
 				EB4D1AD624D21328006DAE8C /* EsthersBooksApp.swift in Sources */,
 				EBC0798C24E849E200BDD546 /* LoginView.swift in Sources */,
