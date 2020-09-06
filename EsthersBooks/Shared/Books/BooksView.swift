@@ -14,8 +14,8 @@ struct BooksView: View {
         NavigationView {
             BookList(books: booksAPI.books)
             
-//            Text("Select a book")
-//                .font(.largeTitle)
+            Text("Select a book")
+                .font(.largeTitle)
         }
     }
 }
