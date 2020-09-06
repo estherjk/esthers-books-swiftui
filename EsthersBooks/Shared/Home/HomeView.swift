@@ -11,6 +11,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var tokenRepository: TokenRepository
     @EnvironmentObject var booksAPI: BooksAPI
+    @EnvironmentObject var genresAPI: GenresAPI
     
     var body: some View {
         TabView {
@@ -37,6 +38,7 @@ struct HomeView: View {
             guard let accessToken = tokenRepository.accessToken else { return }
             
             booksAPI.getBooks(accessToken: accessToken)
+            genresAPI.getGenres(accessToken: accessToken)
         })
     }
 }
@@ -46,5 +48,6 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
             .environmentObject(TokenRepository())
             .environmentObject(BooksAPI())
+            .environmentObject(GenresAPI())
     }
 }

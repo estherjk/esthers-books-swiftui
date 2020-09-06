@@ -11,6 +11,7 @@ import SwiftUI
 struct EsthersBooksApp: App {
     @StateObject var tokenRepository = TokenRepository()
     @StateObject var booksAPI = BooksAPI()
+    @StateObject var genresAPI = GenresAPI()
     @StateObject var userAPI = UserAPI()
     
     var body: some Scene {
@@ -18,6 +19,7 @@ struct EsthersBooksApp: App {
             StartView()
                 .environmentObject(tokenRepository)
                 .environmentObject(booksAPI)
+                .environmentObject(genresAPI)
                 .environmentObject(userAPI)
                 .onAppear(perform: {
                     tokenRepository.verify()
