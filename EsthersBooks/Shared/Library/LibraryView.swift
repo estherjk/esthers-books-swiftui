@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LibraryView: View {
     @EnvironmentObject var booksAPI: BooksAPI
+    @EnvironmentObject var genresAPI: GenresAPI
     
     private let currentYear = Calendar.current.component(.year, from: Date())
     
@@ -20,6 +21,9 @@ struct LibraryView: View {
                         .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
                     
                     YearlySummaryView(booksByYear: booksAPI.booksByYear)
+                        .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
+                    
+                    GenreView(genres: genresAPI.genres, books: booksAPI.books)
                         .listRowInsets(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
                 }
                 .navigationTitle("Library")
@@ -38,5 +42,6 @@ struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
             .environmentObject(BooksAPI())
+            .environmentObject(GenresAPI())
     }
 }

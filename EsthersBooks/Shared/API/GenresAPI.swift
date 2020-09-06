@@ -40,7 +40,7 @@ class GenresAPI: ObservableObject {
             if let genres = try? decoder.decode([Genre].self, from: data) {
                 DispatchQueue.main.async {
                     self.genresStatus = GenresStatus.fetched
-                    self.genres = genres.sorted { $0.url < $1.url }
+                    self.genres = genres.sorted { $0.name < $1.name }
                 }
             }
         }
