@@ -23,51 +23,52 @@ struct BookDetail: View {
     
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/) {
-            VStack(spacing: 5) {
-                BookCover(imageURL: book.cover_attachment.url)
-                    .padding(.bottom)
+            HStack {
+                Spacer()
                 
-                Text(book.title)
-                    .font(.title3)
-                    .multilineTextAlignment(.center)
-                    .padding(.leading)
-                    .padding(.trailing)
-                
-                Divider()
-                    .frame(width: 300)
-                    .padding()
-                
-                Text("Information")
-                    .font(.headline)
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        HStack {
+                VStack(spacing: 5) {
+                    BookCover(imageURL: book.cover_attachment.url)
+                        .padding(.bottom)
+                    
+                    Text(book.title)
+                        .font(.title3)
+                        .multilineTextAlignment(.center)
+                        .padding(.leading)
+                        .padding(.trailing)
+                    
+                    Divider()
+                        .frame(width: 300)
+                        .padding()
+                    
+                    Text("Information")
+                        .font(.headline)
+                    
+                    HStack {
+                        VStack(alignment: .trailing) {
                             Text("Date Started:")
-                                .foregroundColor(.secondary)
-                            
-                            Text("\(book.date_started, formatter: Self.dateFormatter)")
-                        }
-                        
-                        HStack {
                             Text("Date Finished:")
-                                .foregroundColor(.secondary)
-                            
+                        }
+                        .foregroundColor(.secondary)
+                        
+                        VStack(alignment: .leading) {
+                            Text("\(book.date_started, formatter: Self.dateFormatter)")
                             Text("\(book.date_finished, formatter: Self.dateFormatter)")
                         }
                     }
-                }
-                
-                Divider()
-                    .frame(width: 300)
-                    .padding()
-                
-                Text("Genres")
-                    .font(.headline)
-                
-                ForEach(0 ..< book.genres.count) { index in
-                    let genre = genresAPI.genres.filter({ $0.trello_id == book.genres[index] })
-                    Text(genre[0].name)
+                    
+                    Divider()
+                        .frame(width: 300)
+                        .padding()
+                    
+                    Text("Genres")
+                        .font(.headline)
+                    
+                    ForEach(0 ..< book.genres.count) { index in
+                        let genre = genresAPI.genres.filter({ $0.trello_id == book.genres[index] })
+                        Text(genre[0].name)
+                    }
+                    
+                    Spacer()
                 }
                 
                 Spacer()
