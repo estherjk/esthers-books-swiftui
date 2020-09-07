@@ -16,7 +16,7 @@ struct BookList: View {
         List {
             HStack() {
                 Spacer()
-                Text("\(books.count) Books")
+                Text(books.count == 1 ? "\(books.count) Book" : "\(books.count) Books")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 Spacer()

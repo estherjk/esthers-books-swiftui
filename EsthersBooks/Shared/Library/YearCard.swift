@@ -35,7 +35,7 @@ struct YearCard: View {
                 Text(String(year))
                     .font(.headline)
                 
-                Text("\(numBooks) Books")
+                Text(numBooks == 1 ? "\(numBooks) Book" : "\(numBooks) Books")
                     .font(.subheadline)
             }
             .foregroundColor(backgroundColor.readableForegroundColor())

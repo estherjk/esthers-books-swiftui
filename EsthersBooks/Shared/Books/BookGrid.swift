@@ -17,7 +17,7 @@ struct BookGrid: View {
     
     var body: some View {
         ScrollView {
-            Text("\(books.count) Books")
+            Text(books.count == 1 ? "\(books.count) Book" : "\(books.count) Books")
                 .foregroundColor(.secondary)
             
             LazyVGrid(columns: columns, spacing: 40) {
