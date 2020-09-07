@@ -19,7 +19,7 @@ struct SplashView: View {
             .frame(width: 100, height: 100, alignment: .center)
             .opacity(opacity)
             .animation(Animation.easeIn(duration: 1).repeatForever(autoreverses: true))
-            .onAppear { self.opacity = 0.5 }
+            .onAppear { self.opacity = 0.2 }
     }
 }
 
