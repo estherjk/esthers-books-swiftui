@@ -29,6 +29,7 @@ struct BookList: View {
                 }
             }
         }
+        .listStyle(PlainListStyle())
         .navigationTitle(navBarTitle)
     }
 }
